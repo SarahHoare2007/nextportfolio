@@ -20,6 +20,7 @@ const Footer = () => {
                 <li><a href="https://www.facebook.com/profile.php?id=61556567321748" target="_blank">Facebook</a></li>
                 <li><a href="mailto:sarah.sh.studios@gmail.com">Email</a></li>
             </ul>
+            <div className={style.shape}></div>
         </footer>
 
     )

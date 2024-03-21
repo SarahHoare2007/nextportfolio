@@ -3,7 +3,15 @@ import Image from "next/image";
 import style from "./navbar.module.css";
 import Logo from '../../assets/images/logo.svg';
 
+
+const Triangle = () => {
+    return (
+        <div className={style.triangle}> </div>
+    )
+}
+
 const Navbar = () => {
+
     return (
         <nav>
             <ul className={style.nav}>
@@ -13,7 +21,7 @@ const Navbar = () => {
                     </Link>
                 </li>
                 <li>
-                    <Link href="/aboutme">
+                    <Link href="/about/about">
                         About Me
                     </Link>
                 </li>

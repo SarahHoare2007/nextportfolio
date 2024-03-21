@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'GFS Didot';
+  src: url('../assets/fonts/GFSDidot-Regular.ttf') format('ttf');
+}
+
 /*index specific*/
 .wrapper {
   display: flex;
@@ -16,7 +21,7 @@
 }
 
 .worktitle {
-  font-family: Dancing Script, cursive;
+  font-family: 'Dancing Script', cursive;
   font-size: 3em;
   color: aliceblue;
   text-align: center;
@@ -36,7 +41,7 @@
   padding-right: 1.5em;
   padding: 10px;
   font-size: 1.5em;
-  font-family: Great Vibes, cursive;
+  font-family: 'Great Vibes', cursive;
   margin-top: 50px;
 }
 
@@ -46,21 +51,8 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 20px
-}
-
-.griditem {
-  padding-bottom: 30px;
-  width: 350px;
-  text-align: center;
-}
-
-.square {
-  background-color: whitesmoke;
-  width: 350px;
-  height: 250px;
-  text-align: center;
-  margin-top: 50px;
+  padding: 20px;
+  background-color: white;
 }
 
 .header {
@@ -72,4 +64,47 @@
 .search {
   float: left;
   color: black;
+}
+
+/*image*/
+
+.section {
+  font-family: "GFS Didot", serif;
+  font-size: 25px;
+}
+
+.griditem {
+  padding-bottom: 25px;
+  width: 350px;
+  text-align: center;
+}
+
+.griditem p {
+  padding: 20px 10px 0 10px;
+}
+
+.square {
+  background-color: whitesmoke;
+  width: 350px;
+  height: 250px;
+  margin-top: 50px;
+}
+
+@media (min-width: 1000px) {
+  .section {
+    font-size: 40px;
+  }
+
+  .griditem {
+    flex-direction: row;
+  }
+
+  .description {
+    float: right;
+  }
+
+  .square {
+    width: 450px;
+    height: 350px;
+  }
 }
