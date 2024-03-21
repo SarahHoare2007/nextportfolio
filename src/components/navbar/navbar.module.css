@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'GFS Didot';
+    src: url('../../assets/fonts/GFSDidot-Regular.ttf') format('ttf');
+}
+
+.nav {
+    width: 1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 30px;
+    list-style: none;
+    padding: 15px 0 10px 0;
+    font-family: "GFS Didot", serif;
+}
+
+.nav li :hover {
+    background-color: aliceblue;
+}
