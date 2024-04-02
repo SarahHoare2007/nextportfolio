@@ -3,46 +3,18 @@
   src: url('../assets/fonts/GFSDidot-Regular.ttf') format('ttf');
 }
 
-/*index specific*/
-.wrapper {
-  display: flex;
-  flex-direction: row;
-}
-
-.color {
-  align-self: flex-start;
-  background-color: rgba(18, 100, 125, 1);
-  height: 700px;
-  width: 1000px;
-  border-bottom-right-radius: 100px;
-  border-bottom-left-radius: 100px;
-  margin: 0;
-  padding: 0;
-}
-
-.worktitle {
-  font-family: 'Dancing Script', cursive;
-  font-size: 3em;
-  color: aliceblue;
-  text-align: center;
-  margin-top: 150px;
-}
-
-.look {
-  font-size: 1.5em;
-  color: aliceblue;
-  text-align: center;
-  margin: 0;
-  Padding: 80px
+@font-face {
+  font-family: 'Didot';
+  src: url('../assets/fonts/Didot Regular.ttf') format('ttf');
 }
 
 
 .name {
   padding-right: 1.5em;
   padding: 10px;
-  font-size: 1.5em;
-  font-family: 'Great Vibes', cursive;
+  font-family: "Didot", serif;
   margin-top: 50px;
+  font-size: 3em;
 }
 
 .main {
@@ -53,6 +25,8 @@
   width: 100%;
   padding: 20px;
   background-color: white;
+  margin-top: 100px;
+  padding-top: 100px
 }
 
 .header {

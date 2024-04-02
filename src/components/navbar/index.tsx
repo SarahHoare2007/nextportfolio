@@ -13,40 +13,42 @@ const Triangle = () => {
 const Navbar = () => {
 
     return (
-        <nav>
-            <ul className={style.nav}>
-                <li>
-                    <Link href="/">
-                        <Image src={Logo} width={100} height={100} alt="logo" />
-                    </Link>
-                </li>
-                <li>
-                    <Link href="/about/about">
-                        About Me
-                    </Link>
-                </li>
-                <li>
-                    <Link href="/resume">
-                        Resume
-                    </Link>
-                </li>
-                <li>
-                    <Link href="/blog">
-                        Blog
-                    </Link>
-                </li>
-                <li>
-                    <Link href="/Projects">
-                        Projects
-                    </Link>
-                </li>
-                <li>
-                    <Link href="/contactme">
-                        Contact Me
-                    </Link>
-                </li>
-            </ul>
-        </nav>
+        <div className={style.background}>
+            <nav>
+                <div className={style.shape}></div>
+                <Link href="/" className={style.logo}>
+                    <Image src={Logo} width={100} height={100} alt="logo" />
+                </Link>
+                <ul className={style.nav}>
+                    <li>
+                        <Link href="/about">
+                            About Me
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href="/resume">
+                            Resume
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href="/blog">
+                            Blog
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href="/projects">
+                            Projects
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href="/contact">
+                            Contact Me
+                        </Link>
+                    </li>
+                </ul>
+
+            </nav>
+        </div>
     );
 }
 

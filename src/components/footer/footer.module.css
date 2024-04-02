@@ -51,7 +51,10 @@
 .shape {
     width: 0;
     height: 0;
-    border-left: 1000px solid transparent;
-    border-right: 50px solid transparent;
-    border-bottom: 50px solid #9BD7D0;
+    border-left: 500px solid transparent;
+    border-right: 0px solid transparent;
+    border-bottom: 300px solid #9BD7D0;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
 }

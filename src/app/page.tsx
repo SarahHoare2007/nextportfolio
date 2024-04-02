@@ -1,31 +1,17 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-import Navbar from '../components/navbar';
 import Footer from '../components/footer';
 import coffee from '../assets/images/coffee.png';
 import eye from '../assets/images/eye.jpg';
 import monogram from '../assets/images/monogram.png';
-import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 
 
 export default function Home() {
   return (
     <main className={styles.main}>
-      <Navbar />
 
-      <div className={styles.wrapper}>
-        <div className={styles.color}>
-          <h2 className={styles.worktitle}>Graphic designer <br /> &amp; Artist</h2>
-          <div className={styles.look}>View some of my projects below!</div> <div>
-            <Image src={ArrowDownwardIcon}
-              width={20}
-              height={20}
-              alt="arrow" />
-          </div>
-        </div>
-        <div className={styles.name}>
-          <h1>Sarah <br />Hoare <br />Portfolio</h1>
-        </div>
+      <div className={styles.name}>
+        <h1>Sarah Sioux Studios</h1>
       </div>
 
 

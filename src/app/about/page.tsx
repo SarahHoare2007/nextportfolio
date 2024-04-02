@@ -1,7 +1,7 @@
 import Navbar from '../../components/navbar';
 import Footer from '../../components/footer';
 import styles from "./about.module.css";
-import headshot from '...../assets/images/headshot.png';
+import headshot from '../../assets/images/headshot.png';
 import Image from "next/image";
 
 export default function About() {
