@@ -22,33 +22,3 @@
     margin: 30px;
     align-items: flex-end;
 }
-
-.hold {
-    display: flex;
-    width: 75%;
-    padding: 20px;
-    justify-content: center;
-}
-
-.text {
-    padding: 20px;
-    width: 500px;
-    text-indent: 20px;
-    line-height: 1.6;
-}
-
-@media (min-width:800px) {
-
-    .hold {
-        flex-direction: row-reverse;
-    }
-
-    .text {
-        width: 500px;
-        margin: 10px 10px 10px 20px;
-    }
-
-    .heashot {
-        margin: 10px 20px 10px 10px;
-    }
-}

@@ -1,12 +1,16 @@
-import Navbar from '../../components/navbar';
-import Footer from '../../components/footer';
+import styles from "./resume.module.css";
 
 export default function Resume() {
     return (
-        <main>
+        <main className={styles.main}>
+            <div className={styles.title}>Resume</div>
 
+            <h2>Experience:</h2>
+            <h2>Skills:</h2>
+            <h2>A third thing:</h2>
 
-            <Footer />
+            <p>Download my resume here!</p>
+
         </main>
     );
 }

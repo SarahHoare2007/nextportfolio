@@ -11,13 +11,14 @@
     height: 250px;
     font-size: 20px;
     justify-content: center;
-    margin-top: 2em;
 
     flex-direction: row;
 
     font-family: "GFS Didot", serif;
 
-    padding: 30px
+    padding: 30px;
+
+    position: relative;
 }
 
 .footsocials {

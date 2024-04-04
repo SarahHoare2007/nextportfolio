@@ -8,6 +8,11 @@
   src: url('../assets/fonts/Didot Regular.ttf') format('ttf');
 }
 
+@font-face {
+  font-family: 'Proxima-nova';
+  src: url('../assets/fonts/Proxima Nova Light.otf') format('otf');
+}
+
 
 .name {
   padding-right: 1.5em;
@@ -15,6 +20,13 @@
   font-family: "Didot", serif;
   margin-top: 50px;
   font-size: 3em;
+}
+
+.skills {
+  font-size: 1.3em;
+  font-family: 'Proxima-nova', sans-serif;
+  text-align: center;
+  padding: 10px;
 }
 
 .main {

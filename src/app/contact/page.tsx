@@ -1,5 +1,3 @@
-import Navbar from '../../components/navbar';
-import Footer from '../../components/footer';
 import styles from "./contact.module.css";
 
 export default function contact() {
@@ -21,8 +19,6 @@ export default function contact() {
                     </ul>
                 </div>
             </div>
-
-            <Footer />
         </main>
     );
 }
