@@ -1,11 +1,17 @@
 import styles from "./about.module.css";
 import headshot from '../../assets/images/headshot.png';
 import Image from "next/image";
+import aboutme from '../../assets/images/aboutme.svg';
 
 export default function About() {
     return (
         <main className={styles.main}>
-            <div className={styles.title}>About Me!</div>
+            {/* <div className={styles.title}>About Me!</div>*/}
+            <Image className={styles.title}
+                src={aboutme}
+                width={300}
+                height={180}
+                alt="About Me!" />
 
             <div className={styles.hold}>
                 <div className={styles.text}>
@@ -23,7 +29,7 @@ export default function About() {
                 <div className="headshot"><Image
                     src={headshot}
                     width={350}
-                    height={450}
+                    height={480}
                     alt="Me!"
                 /></div>
             </div>
