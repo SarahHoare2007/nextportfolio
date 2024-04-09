@@ -9,8 +9,8 @@ export default function About() {
             {/* <div className={styles.title}>About Me!</div>*/}
             <Image className={styles.title}
                 src={aboutme}
-                width={300}
-                height={180}
+                width={432}
+                height={174}
                 alt="About Me!" />
 
             <div className={styles.hold}>

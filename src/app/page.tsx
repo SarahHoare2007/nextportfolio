@@ -3,15 +3,23 @@ import styles from "./page.module.css";
 import coffee from '../assets/images/coffee.png';
 import eye from '../assets/images/eye.jpg';
 import monogram from '../assets/images/monogram.png';
+import title from '../assets/images/mainheading.svg';
 
 
 export default function Home() {
   return (
     <main className={styles.main}>
 
-      <div className={styles.name}>
+      {/* <div className={styles.name}>
         <h1>Sarah Sioux Studios</h1>
-      </div>
+      </div>*/}
+
+      <Image className={styles.title}
+        src={title}
+        width={695}
+        height={235}
+        alt="Sarah Sioux Studios" />
+
 
       <div className={styles.skills}>
         <h2>Graphic Design</h2>
