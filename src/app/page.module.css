@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+
+@import url("https://use.typekit.net/dpt4bai.css");
+
 @font-face {
   font-family: 'GFS Didot';
   src: url('../assets/fonts/GFSDidot-Regular.ttf') format('ttf');
@@ -24,9 +28,16 @@
 
 .skills {
   font-size: 1.3em;
-  font-family: 'Proxima-nova', sans-serif;
+  font-family: 'Caveat', sans-serif;
   text-align: center;
   padding: 10px;
+}
+
+.GD,
+.IL,
+.WD {
+  padding: 10px;
+  font-size: 3em;
 }
 
 .main {
@@ -57,6 +68,13 @@
 .section {
   font-family: "GFS Didot", serif;
   font-size: 25px;
+}
+
+.section p {
+  font-family: "proxima-nova", serif;
+  font-weight: 400;
+  font-style: normal;
+
 }
 
 .griditem {

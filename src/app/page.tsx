@@ -22,9 +22,9 @@ export default function Home() {
 
 
       <div className={styles.skills}>
-        <h2>Graphic Design</h2>
-        <h2>Illustration</h2>
-        <h2>Web Design</h2>
+        <div className={styles.GD}>Graphic Design</div>
+        <div className={styles.IL}>Illustration</div>
+        <div className={styles.WD}>Web Design</div>
       </div>
 
 
