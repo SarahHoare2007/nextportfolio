@@ -1,5 +1,5 @@
 import styles from "./about.module.css";
-import headshot from '../../assets/images/headshot.png';
+import headshot from '../../assets/images/headshot.svg';
 import Image from "next/image";
 import aboutme from '../../assets/images/aboutme.svg';
 
@@ -26,10 +26,10 @@ export default function About() {
                         about myself I’m supposed to say so this is a tomorrow problem.
                     </p>
                 </div>
-                <div className="headshot"><Image
+                <div className={styles.headshot}><Image
                     src={headshot}
-                    width={350}
-                    height={480}
+                    width={491}
+                    height={721.5}
                     alt="Me!"
                 /></div>
             </div>
