@@ -112,3 +112,8 @@
     height: 350px;
   }
 }
+
+.contactform {
+  display: flex;
+  flex-direction: column;
+}
