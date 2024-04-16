@@ -27,7 +27,11 @@ const ContactForm = () => {
 
         <>
 
-            {submission?.status}
+            {submission?.status ? (
+                <Alert varient="filled" severity={submission.status}>
+                    {submission.message}
+                </Alert>
+            )
             <form className={styles.contactform} action={handleSubmit}>
                 <Box sx={{ pb: { xs: 1, md: 1 } }}>
                     <TextField id="name-basic" color="primary" label="Name" variant="outlined" type="name" /></Box>
