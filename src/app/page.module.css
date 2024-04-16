@@ -18,12 +18,8 @@
 }
 
 
-.name {
-  padding-right: 1.5em;
-  padding: 10px;
-  font-family: "Didot", serif;
-  margin-top: 50px;
-  font-size: 3em;
+.title {
+  position: relative;
 }
 
 .skills {
@@ -38,6 +34,7 @@
 .WD {
   padding: 10px;
   font-size: 3em;
+  margin: 20px
 }
 
 .main {
@@ -113,7 +110,9 @@
   }
 }
 
-.contactform {
+.contactForm {
   display: flex;
   flex-direction: column;
+  width: 700px;
+  margin: 20px;
 }

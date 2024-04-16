@@ -4,12 +4,6 @@ import style from "./navbar.module.css";
 import Logo from '../../assets/images/logo.svg';
 
 
-const Triangle = () => {
-    return (
-        <div className={style.triangle}> </div>
-    )
-}
-
 const Navbar = () => {
 
     return (

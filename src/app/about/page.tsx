@@ -15,7 +15,7 @@ export default function About() {
 
             <div className={styles.hold}>
                 <div className={styles.text}>
-                    <p>  My name is Sarah Hoare and I am a 16 year old artist, dancer, and graphic designer. Currently, I
+                    <p>  My name is Sarah Hoare and I am a 17 year old artist, dancer, and graphic designer. Currently, I
                         am a full-time student at
                         North Idaho College working towards an AAS in Graphic and Web Design.
                     </p> <br /><p>

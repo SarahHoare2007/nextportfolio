@@ -13,16 +13,16 @@ const ContactForm = () => {
 
     const handleSubmit = async (formData: any) => {
         console.log(formData);
-        let object: {[key:string]: any} = {};
+        let object: { [key: string]: any } = {};
         formData.forEach((value: string, key: string) => object[key] = value);
         await fetch('/contact/send', {
             method: 'POST',
             body: JSON.stringify(object),
-          })
+        })
             .then((res) => res.json())
             .then((res) => {
-              console.log("MY AWESOME RESPONSE", res);
-              setSubmission(res);
+                console.log("MY AWESOME RESPONSE", res);
+                setSubmission(res);
             });
     }
 
@@ -33,21 +33,21 @@ const ContactForm = () => {
                     {submission.message}
                 </Alert>
             ) : null}
-            
+
             <form className={styles.contactForm} action={handleSubmit}>
-                <Box sx={{pb: {xs: 1, md: 1}}}>
+                <Box sx={{ pb: { xs: 1, md: 1 } }}>
                     <TextField name="name" id="name-basic" color="primary" label="Name" variant="outlined" type="text" />
                 </Box>
-                <Box sx={{pb: {xs: 1, md: 1}}}>
+                <Box sx={{ pb: { xs: 1, md: 1 } }}>
                     <TextField name="email" id="email-basic" label="Email" variant="outlined" type="email" />
                 </Box>
-                <Box sx={{pb: {xs: 1, md: 1}}}>
-                    <TextareaAutosize name="message" id="message" placeholder="Enter message here!" minRows={3} />
+                <Box sx={{ pb: { xs: 1, md: 1 } }}>
+                    <TextareaAutosize name="message" id="message" placeholder="Enter message here!" minRows={5} />
                 </Box>
                 <Button type="submit" variant="contained" color="secondary">Submit contact</Button>
             </form>
         </div>
-        
+
     );
 
 }

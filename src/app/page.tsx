@@ -1,18 +1,65 @@
+"use client";
 import Image from "next/image";
 import styles from "./page.module.css";
 import coffee from '../assets/images/coffee.png';
 import eye from '../assets/images/eye.jpg';
 import monogram from '../assets/images/monogram.png';
 import title from '../assets/images/mainheading.svg';
+import { gsap } from 'gsap';
+import { useGSAP } from '@gsap/react';
+import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+import { useRef } from 'react';
+
+gsap.registerPlugin(ScrollTrigger)
 
 
 export default function Home() {
+  const mainRef = useRef();
+  const imageRefs = useRef([]);
+  const titleRefs = useRef([]);
+  const paraRefs = useRef([]);
+  const descRefs = useRef([]);
+
+  const setRef = (ref, element) => {
+    ref.current.push(element);
+  }
+
+  useGSAP(
+    () => {
+      imageRefs?.current?.forEach((img) => {
+        gsap.from(img, {
+          x: -500,
+          opacity: 0,
+          scrollTrigger: {
+            trigger: img,
+            start: 'bottom bottom',
+            end: 'top 20%',
+            scrub: true,
+            markers: true,
+          },
+        });
+      })
+
+      descRefs?.current?.forEach((desc) => {
+        gsap.from(desc, {
+          x: -500,
+          opacity: 0,
+          scrollTrigger: {
+            trigger: desc,
+            start: 'bottom bottom',
+            end: 'top 20%',
+            scrub: true,
+            markers: true,
+          },
+        });
+      })
+
+    },
+    { scope: mainRef }
+  );
+
   return (
     <main className={styles.main}>
-
-      {/* <div className={styles.name}>
-        <h1>Sarah Sioux Studios</h1>
-      </div>*/}
 
       <Image className={styles.title}
         src={title}
@@ -22,7 +69,7 @@ export default function Home() {
 
 
       <div className={styles.skills}>
-        <div className={styles.GD}>Graphic Design</div>
+        <div className={styles.GD} ref={(e) => setRef(descRefs, e)}>Graphic Design</div>
         <div className={styles.IL}>Illustration</div>
         <div className={styles.WD}>Web Design</div>
       </div>
@@ -45,6 +92,7 @@ export default function Home() {
         <a href="./Projects.html#graphic-design">
           <div className={styles.square}>
             <Image
+              ref={(e) => setRef(imageRefs, e)}
               src={coffee}
               width={350}
               height={250}
