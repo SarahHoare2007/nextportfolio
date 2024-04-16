@@ -1,8 +1,10 @@
 import styles from "./contact.module.css";
-import ContactForm from '../../components/global';
+import ContactForm from '../../components/global/ContactForm';
 
 export default function contact() {
-    <div className={styles.main}>
-        <ContactForm />
-    </div>
+    return (
+        <div className={styles.main}>
+            <ContactForm />
+        </div>
+    );
 }
