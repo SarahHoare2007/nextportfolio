@@ -6,7 +6,6 @@ import aboutme from '../../assets/images/aboutme.svg';
 export default function About() {
     return (
         <main className={styles.main}>
-            {/* <div className={styles.title}>About Me!</div>*/}
             <Image className={styles.title}
                 src={aboutme}
                 width={432}
