@@ -3,7 +3,7 @@
     flex-direction: column;
     width: 100%;
     background-color: white;
-    margin-top: 5px;
+    margin-top: 60px;
     padding-top: 100px;
     justify-content: center;
     align-items: center;
@@ -13,6 +13,7 @@
 
 .title {
     display: flex;
+    margin-top: 75px;
 }
 
 
@@ -21,7 +22,7 @@
     flex-direction: row;
 }
 
-.circle1 {
+.circle {
     width: 75px;
     height: 75px;
     background-color: #9BD7D0;
@@ -67,4 +68,19 @@
     background-color: #5FA9A0;
     border-radius: 50%;
     margin: 95px 10px 10px 10px;
+}
+
+.gallery {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 85%;
+    margin: 50px
+}
+
+.image {
+    margin: 15px;
+}
+
+.section {
+    width: 80%;
 }

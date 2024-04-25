@@ -16,41 +16,41 @@ gsap.registerPlugin(ScrollTrigger)
 export default function Home() {
   const mainRef = useRef();
   const imageRefs = useRef([]);
-  const titleRefs = useRef([]);
-  const paraRefs = useRef([]);
   const descRefs = useRef([]);
 
-  const setRef = (ref, element) => {
+  const setRef = (ref: any, element: any) => {
     ref.current.push(element);
   }
 
   useGSAP(
     () => {
-      imageRefs?.current?.forEach((img) => {
+      imageRefs?.current?.forEach((img, index) => {
+        const even = index % 2 == 0;
         gsap.from(img, {
-          x: -500,
+          x: even ? -500 : 500,
           opacity: 0,
           scrollTrigger: {
             trigger: img,
             start: 'bottom bottom',
             end: 'top 20%',
             scrub: true,
-            markers: true,
+            //markers: true,
           },
         });
       })
 
-      descRefs?.current?.forEach((desc) => {
-        gsap.from(desc, {
-          x: -500,
-          opacity: 0,
-          scrollTrigger: {
-            trigger: desc,
-            start: 'bottom bottom',
-            end: 'top 20%',
-            scrub: true,
-            markers: true,
-          },
+      descRefs?.current?.forEach((desc, index) => {
+        gsap.to(desc, {
+          x: 0,
+          opacity: 1,
+          delay: index * .2,
+          // scrollTrigger: {
+          //   trigger: desc,
+          //   start: 'top bottom',
+          //   //end: 'top 20%',
+          //   scrub: true,
+          //   //markers: true,
+          // },
         });
       })
 
@@ -70,14 +70,15 @@ export default function Home() {
 
       <div className={styles.skills}>
         <div className={styles.GD} ref={(e) => setRef(descRefs, e)}>Graphic Design</div>
-        <div className={styles.IL}>Illustration</div>
-        <div className={styles.WD}>Web Design</div>
+        <div className={styles.IL} ref={(e) => setRef(descRefs, e)}>Illustration</div>
+        <div className={styles.WD} ref={(e) => setRef(descRefs, e)}>Web Design</div>
       </div>
 
 
       <div className={styles.griditem}>
         <a href="./Projects.html#graphic-illustrations">
           <div className={styles.square}><Image
+            ref={(e) => setRef(imageRefs, e)}
             src={monogram}
             width={350}
             height={250}
@@ -107,6 +108,7 @@ export default function Home() {
       <div className={styles.griditem}>
         <div className={styles.square}> <Image
           src={eye}
+          ref={(e) => setRef(imageRefs, e)}
           width={350}
           height={250}
           alt="eye painting"

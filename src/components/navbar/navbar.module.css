@@ -47,6 +47,7 @@
     height: 200px;
     position: absolute;
     top: 0px;
+    z-index: 500;
     border-bottom: 150px solid #9BD7D0;
 }
 

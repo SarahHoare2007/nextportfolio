@@ -3,18 +3,12 @@
     src: url('../../assets/fonts/Didot Regular.ttf') format('ttf');
 }
 
-@font-face {
-    font-family: 'Proxima-nova';
-    src: url('../../assets/fonts/Proxima Nova Light.otf') format('otf');
-}
-
-
 .main {
     display: flex;
     flex-direction: column;
     width: 100%;
     background-color: white;
-    margin-top: 80px;
+    margin-top: 100px;
     padding-top: 100px;
     justify-content: center;
     align-items: center;
@@ -23,17 +17,8 @@
 }
 
 .title {
-    margin-top: 45px;
-    align-items: flex-end;
-}
-
-.credentials {
-    font-family: "proxima-nova", serif;
-}
-
-.download {
     font-family: "Didot", serif;
+    font-size: 3em;
     margin: 30px;
-    font-size: 40px;
-    text-decoration: underline #5FA9A0;
+    align-items: flex-end;
 }

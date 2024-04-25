@@ -29,7 +29,9 @@
 .WD {
   padding: 10px;
   font-size: 3em;
-  margin: 20px
+  margin: 20px;
+  opacity: 0;
+  transform: translateX(-500px);
 }
 
 .main {
