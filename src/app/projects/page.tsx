@@ -179,38 +179,7 @@ export default function Projects() {
                 )
             })}
 
-            {/* <div className={styles.gallery}>
-                <Image className={styles.image}
-                    src={fox}
-                    width={400}
-                    height={400}
-                    alt="Projects" />
-                <Image className={styles.image}
-                    src={candle}
-                    width={400}
-                    height={400}
-                    alt="Projects" />
-                <Image className={styles.image}
-                    src={duck}
-                    width={400}
-                    height={300}
-                    alt="Projects" />
-                <Image className={styles.image}
-                    src={design}
-                    width={300}
-                    height={400}
-                    alt="Projects" />
-                <Image className={styles.image}
-                    src={travel}
-                    width={300}
-                    height={400}
-                    alt="Projects" />
-                <Image className={styles.image}
-                    src={artnouveau}
-                    width={300}
-                    height={450}
-                    alt="Projects" />
-            </div> */}
+
         </main>
     );
 }
