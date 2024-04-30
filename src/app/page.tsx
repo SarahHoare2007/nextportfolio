@@ -3,7 +3,7 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import coffee from '../assets/images/coffee.png';
 import eye from '../assets/images/eye.jpg';
-import monogram from '../assets/images/monogram.png';
+import album from '../assets/images/albumcover.png';
 import title from '../assets/images/mainheading.svg';
 import { gsap } from 'gsap';
 import { useGSAP } from '@gsap/react';
@@ -79,10 +79,10 @@ export default function Home() {
         <a href="./Projects.html#graphic-illustrations">
           <div className={styles.square}><Image
             ref={(e) => setRef(imageRefs, e)}
-            src={monogram}
-            width={350}
-            height={250}
-            alt="monogram illustration"
+            src={album}
+            width={370}
+            height={370}
+            alt="album cover"
           /></div>
         </a>
         <a href="./Projects.html#graphic-illustrations" className={styles.section}>Graphic Illustrations</a>

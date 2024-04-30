@@ -1,9 +1,13 @@
 'use client';
 import { createTheme } from '@mui/material/styles';
+import { Figtree } from "next/font/google";
+
+const figtree = Figtree({ subsets: ["latin"] });
 
 const theme = createTheme({
     typography: {
 
+        fontFamily: figtree.style.fontFamily,
 
     },
     palette: {

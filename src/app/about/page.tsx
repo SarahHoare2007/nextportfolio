@@ -9,7 +9,6 @@ export default function About() {
             <div className={styles.hold}>
                 <div className={styles.text}>
 
-
                     <Image className={styles.title}
                         src={aboutme}
                         width={432}

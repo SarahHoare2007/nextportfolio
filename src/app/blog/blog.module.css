@@ -22,6 +22,16 @@
 .blogtitle {
     font-family: 'Didot', serif;
     font-size: 20pt;
-    text-decoration: underline #5FA9A0;
+    text-decoration: underline 5px #5FA9A0;
     margin: 20px 0px 10px 0px;
+}
+
+.blogs {
+    text-align: center;
+}
+
+.date {
+    color: #5FA9A0;
+    font-size: 16pt;
+    font-weight: light;
 }

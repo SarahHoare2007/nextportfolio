@@ -155,19 +155,19 @@ export default function Projects() {
                 <div className={styles.circle6}>Photoshop</div> */}
                 {sections.map((section) => {
                     return (
-                        <div className={styles.circle}><a href={`#${section.id}`}> {section.label}</a></div>
+                        <div key={`menu-item-${section.id}`} className={styles.circle}><a href={`#${section.id}`}> {section.label}</a></div>
                     )
                 })}
             </div>
 
             {sections.map((section) => {
                 return (
-                    <div className={styles.section} id={section.id} key={section.id}>
+                    <div className={styles.section} id={section.id} key={`section-${section.id}`}>
                         <h2>{section.label}</h2>
                         <div className={styles.gallery}>
-                            {section.gallery.map((image) => {
+                            {section.gallery.map((image, index) => {
                                 return (
-                                    <Image className={styles.image}
+                                    <Image key={`image-${section.id}-${index}`} className={styles.image}
                                         src={image.src}
                                         width={image.width}
                                         height={image.height}
