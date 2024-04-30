@@ -162,7 +162,7 @@ export default function Projects() {
 
             {sections.map((section) => {
                 return (
-                    <div className={styles.section} id={section.id}>
+                    <div className={styles.section} id={section.id} key={section.id}>
                         <h2>{section.label}</h2>
                         <div className={styles.gallery}>
                             {section.gallery.map((image) => {
