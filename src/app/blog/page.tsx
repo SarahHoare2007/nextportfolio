@@ -11,6 +11,15 @@ export default function blog() {
                 width={432}
                 height={174}
                 alt="Blog" />
+
+            <dl className={blogs}>
+                <dt className={styles.blogtitle}><a href={`cookieblog.html`}>The Fastest Peanut Butter Cookie Recipe</a></dt>
+                <dd>3/14/2024</dd>
+                <dt className={styles.blogtitle}><a href={`Jsblog.html`}>Comparison of vanilla JavaScript and React</a></dt>
+                <dd>3/12/2024</dd>
+                <dt className={styles.blogtitle}><a href={`./../assets/entry1.html`}>Publishing my portfolio</a></dt>
+                <dd>11/29/2023</dd>
+            </dl>
         </main>
     )
 }

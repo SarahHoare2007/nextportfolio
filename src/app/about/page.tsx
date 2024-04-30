@@ -6,14 +6,17 @@ import aboutme from '../../assets/images/aboutme.svg';
 export default function About() {
     return (
         <main className={styles.main}>
-            <Image className={styles.title}
-                src={aboutme}
-                width={432}
-                height={174}
-                alt="About Me!" />
-
             <div className={styles.hold}>
                 <div className={styles.text}>
+
+
+                    <Image className={styles.title}
+                        src={aboutme}
+                        width={432}
+                        height={174}
+                        alt="About Me!" />
+
+
                     <p>  My name is Sarah Hoare and I am a 17 year old artist, dancer, and graphic designer. Currently, I
                         am a full-time student at
                         North Idaho College working towards an AAS in Graphic and Web Design.

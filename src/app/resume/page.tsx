@@ -12,12 +12,31 @@ export default function Resume() {
                 alt="Projects" />
 
             <div className={styles.credentials}>
-                <h2>Experience:</h2>
-                <h2>Skills:</h2>
-                <h2>A third thing:</h2>
+                <div className={styles.section}>
+                    <h1>Experience:</h1>
+                    <ul>
+                        <li>Adobe Illustrator</li>
+                        <li>Adobe Photoshop</li>
+                        <li>leadership roles</li>
+                    </ul>
+                </div>
+                <div className={styles.section}>
+                    <h1>Skills:</h1>
+                    <ul>
+                        <li>Adobe Illustrator</li>
+                        <li>Adobe Photoshop</li>
+                        <li>Creativity</li>
+                    </ul>
+                </div>
+                <div className={styles.section}>
+                    <h1>A third thing:</h1>
+                    <ul>
+                        <li>I like adorable animals!</li>
+                    </ul>
+                </div>
             </div>
 
-            <div className={styles.download}><a href="../../assets/images/resume.pdf" target="_blank"> Download my resume here!</a></div>
+            <div className={styles.download}><a href={`/assets/resume.pdf.`} target="_blank"> Download my resume here!</a></div>
 
         </main >
     );

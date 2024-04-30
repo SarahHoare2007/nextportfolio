@@ -14,8 +14,6 @@
     flex-direction: column;
     width: 100%;
     background-color: white;
-    margin-top: 80px;
-    padding-top: 100px;
     justify-content: center;
     align-items: center;
     flex-grow: 1;
@@ -23,12 +21,18 @@
 }
 
 .title {
-    margin-top: 45px;
-    align-items: flex-end;
+    display: flex;
+    justify-content: center;
 }
 
 .credentials {
-    font-family: "proxima-nova", serif;
+    display: flex;
+    font-family: 'Proxima-nova', serif;
+    flex-direction: row;
+}
+
+.section {
+    margin: 40px;
 }
 
 .download {
