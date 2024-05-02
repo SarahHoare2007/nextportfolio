@@ -24,6 +24,7 @@ export async function POST(request: Request) {
         // send mail with defined transport object
         const info = await transporter.sendMail({
             from: body.email, // sender address
+            replyTo: body.email,
             to: "sarah.sh.studios@gmail.com", // list of receivers
             subject: `My Vercel Contact: ${body.name}`, // Subject line
             text: body.message, // plain text body

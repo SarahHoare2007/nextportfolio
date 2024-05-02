@@ -95,8 +95,8 @@ export default function Home() {
             <Image
               ref={(e) => setRef(imageRefs, e)}
               src={coffee}
-              width={350}
-              height={250}
+              width={400}
+              height={350}
               alt="coffee logo"
             /></div>
         </a>
@@ -109,8 +109,8 @@ export default function Home() {
         <div className={styles.square}> <Image
           src={eye}
           ref={(e) => setRef(imageRefs, e)}
-          width={350}
-          height={250}
+          width={400}
+          height={300}
           alt="eye painting"
         />
         </div>
