@@ -59,7 +59,8 @@ background-color: white;
 border: 2px black solid;
 border-radius: 8px;
 margin: 5px;
-width: 500px
+width: 500px;
+color: black;
 `
 
 const StyledTextArea = styled(TextareaAutosize)`
@@ -68,7 +69,8 @@ border: 2px black solid;
 border-radius: 8px;
 margin: 5px;
 padding: 5px;
-width: 500px
+width: 500px;
+color: black;
 `
 
 const StyledButton = styled(Button)`
