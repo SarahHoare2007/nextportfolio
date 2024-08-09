@@ -7,6 +7,7 @@ import Footer from '../components/footer';
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v13-appRouter';
 import { ThemeProvider } from '@mui/material/styles';
 import theme from '../components/global/theme';
+<link rel="stylesheet" href="https://use.typekit.net/dpt4bai.css"></link>
 
 const inter = Inter({ subsets: ["latin"] });
 const figtree = Figtree({ subsets: ["latin"] });

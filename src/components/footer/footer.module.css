@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'GFS Didot';
-    src: url('../../assets/fonts/GFSDidot-Regular.ttf') format('ttf');
+    font-family: 'Figtree';
+    src: url('../../assets/fonts/Figtree-VariableFont.ttf') format('ttf');
 }
 
 .footer {
@@ -14,7 +14,7 @@
 
     flex-direction: row;
 
-    font-family: "GFS Didot", serif;
+    font-family: "Figtree", sans-serif;
 
     padding: 30px;
 

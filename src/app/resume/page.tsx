@@ -1,12 +1,14 @@
 import styles from "./resume.module.css";
 import Image from "next/image";
-import resume from "../../assets/images/resume.svg";
+import resumeH from "../../assets/images/resume.svg";
+import resume from "../../assets/images/resume.pdf";
+
 
 export default function Resume() {
     return (
         <main className={styles.main}>
             <Image className={styles.title}
-                src={resume}
+                src={resumeH}
                 width={432}
                 height={174}
                 alt="Projects" />
@@ -35,8 +37,9 @@ export default function Resume() {
                     </ul>
                 </div>
             </div>
-
-            <div className={styles.download}><a href={`/assets/resume.pdf.`} target="_blank"> Download my resume here!</a></div>
+  
+            
+            <div className={styles.download}><a href="/assets/newresume.pdf" target="_blank"> Download my resume here!</a></div>
 
         </main >
     );

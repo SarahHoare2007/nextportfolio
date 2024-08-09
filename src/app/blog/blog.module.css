@@ -2,6 +2,10 @@
     font-family: 'Didot';
     src: url('../../assets/fonts/Didot Regular.ttf') format('ttf');
 }
+@font-face { 
+    font-family: 'Figtree';
+    src: url('../../assets/fonts/Figtree-VariableFont.ttf') format('ttf');
+ } ;
 
 .main {
     display: flex;
@@ -20,10 +24,11 @@
 }
 
 .blogtitle {
-    font-family: 'Didot', serif;
+    font-family: 'Figtree', serif;
     font-size: 20pt;
     text-decoration: underline 5px #5FA9A0;
     margin: 20px 0px 10px 0px;
+    color: black;
 }
 
 .blogs {
