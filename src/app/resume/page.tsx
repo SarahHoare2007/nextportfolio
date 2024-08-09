@@ -1,14 +1,13 @@
 import styles from "./resume.module.css";
 import Image from "next/image";
-import resumeH from "../../assets/images/resume.svg";
-import resume from "../../assets/images/resume.pdf";
+import resume from "../../assets/images/resume.svg";
 
 
 export default function Resume() {
     return (
         <main className={styles.main}>
             <Image className={styles.title}
-                src={resumeH}
+                src={resume}
                 width={432}
                 height={174}
                 alt="Projects" />
