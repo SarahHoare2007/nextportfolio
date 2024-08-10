@@ -14,12 +14,12 @@
     justify-content: center;
     align-items: center;
     flex-grow: 1;
-    padding: 30px;
-    
+
     background-color: white;
-    
-    margin-top: 100px;
-    padding-top: 100px;
+    color: black;
+
+    padding: 30px;
+    margin-top: 50px;
 }
 
 .title {
@@ -43,4 +43,8 @@
     color: #5FA9A0;
     font-size: 16pt;
     font-weight: light;
+}
+
+.label {
+    flex-direction: column;
 }

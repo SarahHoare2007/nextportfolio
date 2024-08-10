@@ -9,13 +9,14 @@ import duck from '../../assets/images/duck.jpg'
 import travel from '../../assets/images/Travel-poster.png'
 import artnouveau from '../../assets/images/Artnouveau-poster.png'
 import butterflies from '../../assets/images/butterflies.jpg'
-import coffee from '../../assets/images/coffee.png'
+import watermelon from '../../assets/images/watermelon.png'
 import dancer from '../../assets/images/dancer.jpg'
 import eye from '../../assets/images/eye.jpg'
 import jellyfish from '../../assets/images/jellyfish.png'
 import monogram from '../../assets/images/monogram.png'
 import onepage from '../../assets/images/onepage.png'
 import pattern from '../../assets/images/pattern.png'
+import nomu from '../../assets/images/nomu.png'
 import sketches from '../../assets/images/sketches.jpg'
 
 export default function Projects() {
@@ -54,6 +55,12 @@ export default function Projects() {
                     width: 250,
                     height: 250,
                     alt: "My candles on fire",
+                },
+                {
+                src: watermelon,
+                    width: 250,
+                    height: 250,
+                    alt: "watermelon illustration",
                 }
             ],
         },
@@ -122,10 +129,10 @@ export default function Projects() {
             label: "Branding",
             gallery: [
                 {
-                    src: coffee,
+                    src: nomu,
                     width: 250,
                     height: 250,
-                    alt: "coffee logo",
+                    alt: "nomu logo",
                 },
                 {
                     src: onepage,
@@ -162,8 +169,8 @@ export default function Projects() {
 
             {sections.map((section) => {
                 return (
-                    <div className={styles.section} id={section.id} key={`section-${section.id}`}>
-                        <h2>{section.label}</h2>
+                    <div className={styles.section} key={`section-${section.id}`}>
+                        <h2 id={section.id}>{section.label}</h2>
                         <div className={styles.gallery}>
                             {section.gallery.map((image, index) => {
                                 return (

@@ -1,6 +1,6 @@
 import styles from "./blog.module.css";
 import Image from "next/image";
-import blogs from "../../assets/images/blog.svg";
+import blogs from "../../assets/images/blog.png";
 
 
 export default function blog() {
