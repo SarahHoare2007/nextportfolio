@@ -4,7 +4,6 @@ import Image from "next/image";
 import projects from '../../assets/images/projects.svg';
 import fox from '../../assets/images/fox.png'
 import design from '../../assets/images/whatisdesign.png'
-import candle from '../../assets/images/candle.png'
 import duck from '../../assets/images/duck.jpg'
 import travel from '../../assets/images/Travel-poster.png'
 import artnouveau from '../../assets/images/Artnouveau-poster.png'
@@ -12,12 +11,18 @@ import butterflies from '../../assets/images/butterflies.jpg'
 import watermelon from '../../assets/images/watermelon.png'
 import dancer from '../../assets/images/dancer.jpg'
 import eye from '../../assets/images/eye.jpg'
-import jellyfish from '../../assets/images/jellyfish.png'
 import monogram from '../../assets/images/monogram.png'
-import onepage from '../../assets/images/onepage.png'
+import businesspack from '../../assets/images/businesspackage.png'
 import pattern from '../../assets/images/pattern.png'
 import nomu from '../../assets/images/nomu.png'
 import sketches from '../../assets/images/sketches.jpg'
+import albumcover from '../../assets/images/albumcover.png'
+import books from '../../assets/images/book covers.png'
+import quote from '../../assets/images/quoteme.png'
+import creativeinvention from '../../assets/images/creativeinvention.png'
+import favtype from '../../assets/images/broadwayposter.png'
+import explore from '../../assets/images/exploremagazine.png'
+import recipe from '../../assets/images/recipe-card.png'
 
 export default function Projects() {
 
@@ -33,12 +38,6 @@ export default function Projects() {
                     alt: "My sexy fox",
                 },
                 {
-                    src: jellyfish,
-                    width: 250,
-                    height: 250,
-                    alt: "jellyfish illustration",
-                },
-                {
                     src: pattern,
                     width: 250,
                     height: 250,
@@ -51,17 +50,17 @@ export default function Projects() {
                     alt: "monogram illustration",
                 },
                 {
-                    src: candle,
-                    width: 250,
-                    height: 250,
-                    alt: "My candles on fire",
-                },
-                {
                 src: watermelon,
                     width: 250,
                     height: 250,
                     alt: "watermelon illustration",
-                }
+                },
+                {
+                    src: recipe,
+                    width: 250,
+                    height: 250,
+                    alt: "recipe card",
+                },
             ],
         },
         {
@@ -81,12 +80,54 @@ export default function Projects() {
                     alt: "what is design poster",
                 },
                 {
+                    src: quote,
+                    width: 187,
+                    height: 250,
+                    alt: "quote me poster",
+                },
+                {
+                    src: favtype,
+                    width: 187,
+                    height: 250,
+                    alt: "favorite type poster",
+                },
+                {
                     src: travel,
                     width: 187,
                     height: 250,
                     alt: "travel poster",
                 }
             ],
+        },
+        {
+            id: "photoshop",
+            label: "Photoshop",
+            gallery: [
+                {
+                    src: albumcover,
+                    width: 250,
+                    height: 250,
+                    alt: "album cover",
+                },
+                {
+                    src: books,
+                    width: 250,
+                    height: 250,
+                    alt: "book covers",
+                },
+                {
+                    src: explore,
+                    width: 250,
+                    height: 250,
+                    alt: "explore magazine",
+                },
+                {
+                    src: creativeinvention,
+                    width: 250,
+                    height: 250,
+                    alt: "creative invention",
+                },
+            ]
         },
         {
             id: "fineart",
@@ -135,11 +176,11 @@ export default function Projects() {
                     alt: "nomu logo",
                 },
                 {
-                    src: onepage,
-                    width: 187,
+                    src: businesspack,
+                    width: 250,
                     height: 250,
-                    alt: "branding one page",
-                }
+                    alt: "personal business package",
+                },
             ],
         },
 
