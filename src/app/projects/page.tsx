@@ -27,32 +27,32 @@ export default function Projects() {
             gallery: [
                 {
                     src: fox,
-                    width: 400,
-                    height: 400,
+                    width: 250,
+                    height: 250,
                     alt: "My sexy fox",
                 },
                 {
                     src: jellyfish,
-                    width: 400,
-                    height: 400,
+                    width: 250,
+                    height: 250,
                     alt: "jellyfish illustration",
                 },
                 {
                     src: pattern,
-                    width: 400,
-                    height: 400,
+                    width: 250,
+                    height: 250,
                     alt: "marine creatures pattern",
                 },
                 {
                     src: monogram,
-                    width: 400,
-                    height: 400,
+                    width: 250,
+                    height: 250,
                     alt: "monogram illustration",
                 },
                 {
                     src: candle,
-                    width: 400,
-                    height: 400,
+                    width: 250,
+                    height: 250,
                     alt: "My candles on fire",
                 }
             ],
@@ -63,20 +63,20 @@ export default function Projects() {
             gallery: [
                 {
                     src: artnouveau,
-                    width: 300,
-                    height: 400,
+                    width: 187,
+                    height: 250,
                     alt: "art nouveau style poster",
                 },
                 {
                     src: design,
-                    width: 300,
-                    height: 400,
+                    width: 187,
+                    height: 250,
                     alt: "what is design poster",
                 },
                 {
                     src: travel,
-                    width: 300,
-                    height: 400,
+                    width: 187,
+                    height: 250,
                     alt: "travel poster",
                 }
             ],
@@ -87,32 +87,32 @@ export default function Projects() {
             gallery: [
                 {
                     src: duck,
-                    width: 400,
-                    height: 300,
+                    width: 250,
+                    height: 187,
                     alt: "My duck quacks",
                 },
                 {
                     src: sketches,
-                    width: 300,
-                    height: 400,
+                    width: 187,
+                    height: 250,
                     alt: "sketches",
                 },
                 {
                     src: butterflies,
-                    width: 300,
-                    height: 400,
+                    width: 187,
+                    height: 250,
                     alt: "scribblism butterflies",
                 },
                 {
                     src: dancer,
-                    width: 300,
-                    height: 400,
+                    width: 187,
+                    height: 250,
                     alt: "dancer painting",
                 },
                 {
                     src: eye,
-                    width: 400,
-                    height: 300,
+                    width: 250,
+                    height: 187,
                     alt: "mixed-media eye",
                 }
             ],
@@ -123,14 +123,14 @@ export default function Projects() {
             gallery: [
                 {
                     src: coffee,
-                    width: 400,
-                    height: 400,
+                    width: 250,
+                    height: 250,
                     alt: "coffee logo",
                 },
                 {
                     src: onepage,
-                    width: 300,
-                    height: 400,
+                    width: 187,
+                    height: 250,
                     alt: "branding one page",
                 }
             ],

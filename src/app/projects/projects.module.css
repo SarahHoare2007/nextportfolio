@@ -11,6 +11,12 @@
     padding: 30px;
 }
 
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .title {
     display: flex;
     margin-top: 75px;

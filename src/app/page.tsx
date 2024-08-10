@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import styles from "./page.module.css";
-import coffee from '../assets/images/coffee.png';
+import watermelon from '../assets/images/watermelon.png';
 import eye from '../assets/images/eye.jpg';
 import album from '../assets/images/albumcover.png';
 import title from '../assets/images/mainheading.svg';
@@ -27,13 +27,13 @@ export default function Home() {
       imageRefs?.current?.forEach((img, index) => {
         const even = index % 2 == 0;
         gsap.from(img, {
-          x: even ? -500 : 500,
+          x: even ? -300 : 300,
           opacity: 0,
           scrollTrigger: {
             trigger: img,
             start: 'bottom bottom',
-            end: 'top 20%',
-            scrub: true,
+            end: 'top 10%',
+            scrub: 1,
             //markers: true,
           },
         });
@@ -63,8 +63,8 @@ export default function Home() {
 
       <Image className={styles.title}
         src={title}
-        width={695}
-        height={235}
+        width={600}
+        height={140}
         alt="Sarah Sioux Studios" />
 
 
@@ -80,8 +80,8 @@ export default function Home() {
           <div className={styles.square}><Image
             ref={(e) => setRef(imageRefs, e)}
             src={album}
-            width={370}
-            height={370}
+            width={300}
+            height={300}
             alt="album cover"
           /></div>
         </a>
@@ -94,10 +94,10 @@ export default function Home() {
           <div className={styles.square}>
             <Image
               ref={(e) => setRef(imageRefs, e)}
-              src={coffee}
-              width={400}
-              height={350}
-              alt="coffee logo"
+              src={watermelon}
+              width={300}
+              height={300}
+              alt="watermelon illustration"
             /></div>
         </a>
         <div className={styles.description}>
