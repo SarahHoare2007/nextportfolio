@@ -45,6 +45,11 @@
     font-size: 40px;
     text-decoration: underline #5FA9A0;
 }
+.line {
+    font-family: "Proxima-nova", sans-serif;
+    margin: 30px;
+    font-size: 25px;
+}
 
 @media (min-width:600px) {
     .credentials {

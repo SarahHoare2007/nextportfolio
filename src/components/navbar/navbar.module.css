@@ -13,6 +13,7 @@
     list-style: none;
     padding: 70px 15px 10px 215px;
     flex-wrap: wrap;
+    background-color: #5FA9A0;
 }
 
 .nav li {
@@ -44,11 +45,9 @@
 .background {
     background-color: #5FA9A0;
     Width: 100%;
-    height: 200px;
     position: absolute;
     top: 0px;
     z-index: 500;
-    border-bottom: 150px solid #9BD7D0;
 }
 
 

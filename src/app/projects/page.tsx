@@ -58,7 +58,7 @@ export default function Projects() {
                 {
                     src: recipe,
                     width: 250,
-                    height: 250,
+                    height: 187,
                     alt: "recipe card",
                 },
             ],
@@ -112,18 +112,18 @@ export default function Projects() {
                 {
                     src: books,
                     width: 250,
-                    height: 250,
+                    height: 187,
                     alt: "book covers",
                 },
                 {
                     src: explore,
-                    width: 250,
+                    width: 187,
                     height: 250,
                     alt: "explore magazine",
                 },
                 {
                     src: creativeinvention,
-                    width: 250,
+                    width: 187,
                     height: 250,
                     alt: "creative invention",
                 },
@@ -178,7 +178,7 @@ export default function Projects() {
                 {
                     src: businesspack,
                     width: 250,
-                    height: 250,
+                    height: 187,
                     alt: "personal business package",
                 },
             ],

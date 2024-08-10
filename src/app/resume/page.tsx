@@ -36,8 +36,7 @@ export default function Resume() {
                     </ul>
                 </div>
             </div>
-  
-            
+            <div className={styles.line}><h2>Do I sound like the type of person you're looking for?</h2></div>
             <div className={styles.download}><a href="/assets/newresume.pdf" target="_blank"> Download my resume here!</a></div>
 
         </main >
