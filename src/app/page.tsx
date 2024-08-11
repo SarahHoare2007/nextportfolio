@@ -85,7 +85,7 @@ export default function Home() {
             alt="album cover"
           /></div>
         </a>
-        <a href="./Projects.html#graphic-illustrations" className={styles.section}>Graphic Illustrations</a>
+        <a href="projects.page.tsx#graphic-illustrations" className={styles.section}>Graphic Illustrations</a>
         <p>I have created many illustrations for a variety of uses. Add more words here.</p>
       </div>
 
