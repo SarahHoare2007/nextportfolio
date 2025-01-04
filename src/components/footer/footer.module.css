@@ -4,6 +4,8 @@
 }
 
 .footer {
+    font-family: "besley", serif;
+    color:black;
     display: flex;
     background-color: #5FA9A0;
     color: aliceblue;
@@ -23,6 +25,8 @@
 }
 
 .footsocials {
+    font-family: "besley", serif;
+    color:black;
     display: flex;
     flex-direction: column;
     line-height: 25px;
@@ -39,6 +43,8 @@
 }
 
 .footlinks {
+    font-family: "besley", serif;
+    color:black;
     list-style: none;
     line-height: 25px;
     display: flex;

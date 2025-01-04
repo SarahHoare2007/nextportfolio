@@ -111,7 +111,7 @@ export default function Projects() {
                 },
                 {
                     src: books,
-                    width: 250,
+                    width: 260,
                     height: 187,
                     alt: "book covers",
                 },

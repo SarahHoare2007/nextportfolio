@@ -9,6 +9,7 @@ import { gsap } from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import { useRef } from 'react';
+import Link from "next/link";
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -76,7 +77,7 @@ export default function Home() {
 
 
       <div className={styles.griditem}>
-        <a href="./Projects.html#graphic-illustrations">
+      <Link href="/projects#graphic-illustrations">
           <div className={styles.square}><Image
             ref={(e) => setRef(imageRefs, e)}
             src={album}
@@ -84,13 +85,13 @@ export default function Home() {
             height={300}
             alt="album cover"
           /></div>
-        </a>
-        <a href="projects.page.tsx#graphic-illustrations" className={styles.section}>Graphic Illustrations</a>
+        </Link>
+        <Link href="/projects#graphic-illustrations" className={styles.section}>Graphic Illustrations</Link>
         <p>I have created many illustrations for a variety of uses. Add more words here.</p>
       </div>
 
       <div className={styles.griditem}>
-        <a href="./Projects.html#graphic-design">
+        <Link href="/projects#graphic-design">
           <div className={styles.square}>
             <Image
               ref={(e) => setRef(imageRefs, e)}
@@ -99,9 +100,9 @@ export default function Home() {
               height={300}
               alt="watermelon illustration"
             /></div>
-        </a>
+        </Link>
         <div className={styles.description}>
-          <a href="./Projects.html#graphic-design" className={styles.section}>Graphic Design Work</a>
+        <Link href="/projects#graphic-design" className={styles.section}>Graphic Design Work</Link>
           <p>I enjoy creating logos, refining logo designs, and putting together brand packages.</p></div>
       </div>
 
@@ -114,7 +115,7 @@ export default function Home() {
           alt="eye painting"
         />
         </div>
-        <a href="./Projects.html#fine-arts" className={styles.section}>Fine Arts</a>
+        <Link href="/projects#fineart" className={styles.section}>Fine Arts</Link>
         <p>In my free time I work on many types of fine arts.</p>
       </div>
 
