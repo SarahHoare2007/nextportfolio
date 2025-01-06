@@ -26,7 +26,7 @@ const Footer = () => {
             <ul className={style.footsocials}>
                 <li><a href="https://www.instagram.com/sarah_shoare/" target="_blank">Instagram</a>
                 </li>
-                <li><a href="https://www.linkedin.com/in/sarah-h-studios/" target="_blank">LinkdIn</a></li>
+                <li><a href="https://www.linkedin.com/in/sarah-h-studios/" target="_blank">LinkedIn</a></li>
                 <li><a href="https://www.facebook.com/profile.php?id=61556567321748" target="_blank">Facebook</a></li>
                 <li><a href="mailto:sarah.sh.studios@gmail.com">Email</a></li>
             </ul>

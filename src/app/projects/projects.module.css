@@ -10,19 +10,19 @@ margin-top: 100px;
     flex-grow: 1;
     padding: 30px;
     color: black;
-    padding-top: 60px;
-}
-
-.section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .title {
     display: flex;
-    margin-top: 75px;
+    margin-top: 95px;
 }
+
+/*.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+*/
 
 
 .circles {
@@ -43,58 +43,76 @@ margin-top: 100px;
     margin: 10px;
 }
 
-.circle2 {
-    width: 75px;
-    height: 75px;
-    background-color: #3B8377;
-    border-radius: 50%;
-    margin: 95px 10px 10px 10px;
-}
 
-.circle3 {
-    width: 75px;
-    height: 75px;
-    background-color: #5FA9A0;
-    border-radius: 50%;
-    margin: 10px;
-}
 
-.circle4 {
-    width: 75px;
-    height: 75px;
-    background-color: #9BD7D0;
-    border-radius: 50%;
-    margin: 95px 10px 10px 10px;
-}
-
-.circle5 {
-    width: 75px;
-    height: 75px;
-    background-color: #3B8377;
-    border-radius: 50%;
-    margin: 10px;
-}
-
-.circle6 {
-    width: 75px;
-    height: 75px;
-    background-color: #5FA9A0;
-    border-radius: 50%;
-    margin: 95px 10px 10px 10px;
-}
-
-.gallery {
-    flex-direction: row;
+.gallerycontainer {
+    display: flex;
     flex-wrap: wrap;
-    width: 85%;
-    margin: 50px
+    gap: 16px; /* Adjust spacing between items */
+    justify-content: center; /* Center items horizontally */
 }
 
-.image {
-    margin: 15px;
+.galleryitem {
+    flex: 1 1 calc(100% - 10px); 
+    max-width: calc(100% - 10px); /* Ensure proper width */
+    box-sizing: border-box;
+
+
+   position: relative;
+ overflow: hidden;
+border-radius: 8px;
+
 }
 
-.section {
-    width: 90%;
-    flex-direction: column;
+.galleryimage {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Optional styling */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional styling */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation */
+    display: block;
+    transition: transform 0.3s ease;
 }
+
+.galleryimage:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    filter: grayscale(50%); /* Convert to grayscale */
+}
+.galleryover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(53, 131, 122, 0.5); /* Semi-transparent black */ 
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 16px;
+}
+
+.galleryitem:hover .galleryover {
+    opacity: 1; /* Fade in overlay */
+}
+.galleryitem:hover {
+    transform: scale(1.05); /* Zoom effect */
+    transition: transform 0.3s ease,
+     box-shadow 0.3s ease;
+     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+}
+
+
+@media (min-width:600px) {
+    .title {
+        display: flex;
+        margin-top: 95px;
+    }
+    .galleryitem {
+        flex: 1 1 calc(33.333% - 16px); /* Three items per row, adjust for gap */
+        max-width: calc(33.333% - 16px); /* Ensure proper width */
+        box-sizing: border-box;
+    }
+    }

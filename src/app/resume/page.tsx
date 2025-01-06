@@ -18,14 +18,14 @@ export default function Resume() {
                     <ul>
                         <li>Adobe Illustrator</li>
                         <li>Adobe Photoshop</li>
-                        <li>leadership roles</li>
+                        <li>Adobe InDesign</li>
                     </ul>
                 </div>
                 <div className={styles.section}>
                     <h1>Skills:</h1>
                     <ul>
                         <li>Adobe Illustrator</li>
-                        <li>Adobe Photoshop</li>
+                        <li>Leadership</li>
                         <li>Creativity</li>
                     </ul>
                 </div>
