@@ -32,6 +32,8 @@
     position: absolute;
     top: 0px;
     left: 0px;
+    
+    z-index: 99;
 }
 
 .logo {
@@ -45,9 +47,8 @@
 .background {
     background-color: #5FA9A0;
     Width: 100%;
-    position: absolute;
+    position: static;
     top: 0px;
-    z-index: 500;
 }
 
 
@@ -107,5 +108,13 @@
 
         width: 150;
         height: 150;
+    }
+
+    .background {
+        background-color: #5FA9A0;
+        Width: 100%;
+        position: absolute;
+        top: 0px;
+        z-index: 500;
     }
 }

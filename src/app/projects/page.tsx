@@ -75,8 +75,8 @@ export default function Projects() {
         <div className={styles.main}>
              <Image className={styles.title}
                 src={projects}
-                width={432}
-                height={174}
+                width={300}
+                height={100}
                 alt="Projects" />
 
             <Gallery />

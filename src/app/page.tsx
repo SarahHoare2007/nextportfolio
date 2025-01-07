@@ -2,7 +2,7 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import watermelon from '../assets/images/watermelon.png';
-import eye from '../assets/images/eye.jpg';
+import duck from '../assets/images/duck.jpg'
 import album from '../assets/images/albumcover.png';
 import title from '../assets/images/mainheading.svg';
 import { gsap } from 'gsap';
@@ -108,11 +108,11 @@ export default function Home() {
 
       <div className={styles.griditem}>
         <div className={styles.square}> <Image
-          src={eye}
+          src={duck}
           ref={(e) => setRef(imageRefs, e)}
           width={400}
           height={300}
-          alt="eye painting"
+          alt="Ink Duck"
         />
         </div>
         <Link href="/projects#fineart" className={styles.section}>Fine Arts</Link>

@@ -3,7 +3,7 @@
     flex-direction: column;
     width: 100%;
     background-color: white;
-    margin-top: 60px;
+    margin: 30px;
 margin-top: 100px;
     justify-content: center;
     align-items: center;
@@ -14,7 +14,7 @@ margin-top: 100px;
 
 .title {
     display: flex;
-    margin-top: 95px;
+    margin-top: 150px;
 }
 
 /*.section {
@@ -47,7 +47,7 @@ margin-top: 100px;
 
 .gallerycontainer {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 16px; /* Adjust spacing between items */
     justify-content: center; /* Center items horizontally */
 }
@@ -104,15 +104,37 @@ border-radius: 8px;
      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Shadow on hover */
 }
 
-
-@media (min-width:600px) {
+@media (min-width: 500px) {
     .title {
+         margin-top: 25px;
+}
+}
+
+@media (min-width:700px) {
+    .title {
+         margin-top: 45px;
+         width: 432px;
+        height: 174px;
+}
+.gallerycontainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+}
+
+@media (min-width:850px) {
+    .title {
+        margin-top: 45px;
+    }
+    .gallerycontainer {
         display: flex;
-        margin-top: 95px;
+        flex-wrap: wrap;
+        flex-direction: row;
     }
     .galleryitem {
         flex: 1 1 calc(33.333% - 16px); /* Three items per row, adjust for gap */
         max-width: calc(33.333% - 16px); /* Ensure proper width */
         box-sizing: border-box;
     }
+    
     }
