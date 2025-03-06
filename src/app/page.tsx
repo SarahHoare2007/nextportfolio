@@ -59,25 +59,29 @@ export default function Home() {
     { scope: mainRef }
   );
 
+  //projects start below fold. everything above spreads out
+
   return (
     <main className={styles.main}>
 
-      <Image className={styles.title}
-        src={title}
-        width={600}
-        height={140}
-        alt="Sarah Sioux Studios" />
+      <div className={styles.abovefold}>
+        <Image className={styles.title}
+          src={title}
+          width={600}
+          height={140}
+          alt="Sarah Sioux Studios" />
 
 
-      <div className={styles.skills}>
-        <div className={styles.GD} ref={(e) => setRef(descRefs, e)}>Graphic Design</div>
-        <div className={styles.IL} ref={(e) => setRef(descRefs, e)}>Illustration</div>
-        <div className={styles.WD} ref={(e) => setRef(descRefs, e)}>Web Design</div>
+        <div className={styles.skills}>
+          <div className={styles.GD} ref={(e) => setRef(descRefs, e)}>Graphic Design</div>
+          <div className={styles.IL} ref={(e) => setRef(descRefs, e)}>Illustration</div>
+          <div className={styles.WD} ref={(e) => setRef(descRefs, e)}>Web Design</div>
+        </div>
+
       </div>
 
-
       <div className={styles.griditem}>
-      <Link href="/projects#graphic-illustrations">
+        <Link href="/projects#graphic-illustrations">
           <div className={styles.square}><Image
             ref={(e) => setRef(imageRefs, e)}
             src={album}
@@ -102,7 +106,7 @@ export default function Home() {
             /></div>
         </Link>
         <div className={styles.description}>
-        <Link href="/projects#graphic-design" className={styles.section}>Graphic Design Work</Link>
+          <Link href="/projects#graphic-design" className={styles.section}>Graphic Design Work</Link>
           <p>I enjoy creating logos, refining logo designs, and putting together brand packages.</p></div>
       </div>
 

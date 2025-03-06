@@ -12,6 +12,10 @@
   src: url('../assets/fonts/Proxima Nova Light.otf') format('otf');
 }
 
+/*.abovefold {
+  height: vh;
+  width: 100%;
+}*/
 
 .title {
   position: relative;
@@ -91,12 +95,12 @@
 }
 
 @media (min-width: 700px) {
-.title {
-  position: relative;
-  width: 900px;
-      height: 240px;
-      margin-top: 0;
-}
+  .title {
+    position: relative;
+    width: 900px;
+    height: 240px;
+    margin-top: 0;
+  }
 }
 
 @media (min-width: 1000px) {
