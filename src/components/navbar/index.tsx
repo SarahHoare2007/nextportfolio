@@ -6,6 +6,7 @@ import Logo from '../../assets/images/logo.png';
 
 const Navbar = () => {
 
+
     return (
         <div className={style.background}>
             <nav>

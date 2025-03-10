@@ -12,21 +12,40 @@
   src: url('../assets/fonts/Proxima Nova Light.otf') format('otf');
 }
 
-/*.abovefold {
-  height: vh;
+.abovefold {
+  height: 90vh;
   width: 100%;
-}*/
+  /* background-color: grey;*/
+  align-items: center;
+  display: grid;
+  grid-template-rows: 45vh 45vh;
+  grid-template-columns: 33vw 33vw 33vw;
 
-.title {
-  position: relative;
+  justify-content: space-between;
 }
 
+.title {
+  display: grid;
+  align-items: center;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+
 .skills {
+  display: grid;
   font-size: 1.3em;
   font-family: 'Caveat', sans-serif;
   text-align: center;
-  padding: 10px;
+  /* padding: 10px;*/
+  height: 45vh;
   color: black;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
 }
 
 .GD,
@@ -47,7 +66,7 @@
   width: 100%;
   padding: 20px;
   background-color: white;
-  margin-top: 100px;
+  /*margin-top: 100px;*/
   padding-top: 100px;
   color: black;
 }
@@ -96,10 +115,9 @@
 
 @media (min-width: 700px) {
   .title {
-    position: relative;
-    width: 900px;
-    height: 240px;
-    margin-top: 0;
+    width: 55vw;
+    height: 45vh;
+    align-items: center;
   }
 }
 
@@ -120,6 +138,8 @@
     width: 450px;
     height: 350px;
   }
+
+
 }
 
 /*.contactForm {
