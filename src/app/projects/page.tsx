@@ -1,3 +1,4 @@
+import pageStyles from "@/app/page.module.css";
 import styles from "@/app/projects/projects.module.css";
 import React from 'react';
 import Image from "next/image";
@@ -26,7 +27,7 @@ export default function Projects() {
     };
 
     return (
-        <div className={styles.main}>
+        <main className={pageStyles.main}>
             <Image className={styles.title}
                 src={projects}
                 width={300}
@@ -34,7 +35,7 @@ export default function Projects() {
                 alt="Projects" />
 
             <Gallery />
-        </div>
+        </main>
     );
 
 }

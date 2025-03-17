@@ -48,7 +48,7 @@
 .background {
     background-color: #5FA9A0;
     Width: 100%;
-    position: static;
+    position: fixed;
     top: 0px;
 }
 
@@ -76,7 +76,6 @@
 
     .background {
         height: 130px;
-        position: absolute;
         top: 0px;
         border-bottom: 90px solid #9BD7D0;
     }
@@ -105,8 +104,6 @@
         position: absolute;
         left: 50px;
         top: 30px;
-
-
         width: 150;
         height: 150;
     }
@@ -114,7 +111,7 @@
     .background {
         background-color: #5FA9A0;
         Width: 100%;
-        position: absolute;
+        position: fixed;
         top: 0px;
         z-index: 500;
     }
