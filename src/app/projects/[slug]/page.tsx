@@ -23,10 +23,8 @@ export default async function ProjectPage({
             <h1>{project.alt}</h1>
             <div className={styles.format}>
                 <div className={styles.arrow}></div>
-                <div className={styles.imagebox}>
-                    <Image src={project.src} fill style={{ objectFit: "contain" }} alt={project.alt} />
-                    <p> {project.desc}</p>
-                </div>
+                    <Image className={styles.image} src={project.src} fill style={{ objectFit: "contain" }} alt={project.alt} />
+                    <p className={styles.text}> {project.desc}</p>
             </div>
         </main >
     );

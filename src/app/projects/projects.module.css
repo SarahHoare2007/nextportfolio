@@ -4,7 +4,7 @@
     width: 100%;
     background-color: white;
     margin: 30px;
-    margin-top: 130px;
+    margin-top: 180px;
     justify-content: center;
     align-items: center;
     flex-grow: 1;
@@ -16,13 +16,6 @@
     display: flex;
     margin-top: 150px;
 }
-
-/*.section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-*/
 
 
 .circles {

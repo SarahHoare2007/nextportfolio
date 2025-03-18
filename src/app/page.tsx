@@ -35,7 +35,7 @@ export default function Home() {
             start: 'bottom bottom',
             end: 'top 10%',
             scrub: 1,
-            //markers: true,
+            markers: true,
           },
         });
       })
@@ -50,7 +50,7 @@ export default function Home() {
           //   start: 'top bottom',
           //   //end: 'top 20%',
           //   scrub: true,
-          //   //markers: true,
+          markers: true,
           // },
         });
       })

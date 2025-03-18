@@ -17,35 +17,43 @@
   width: 100%;
   /* background-color: grey;*/
   align-items: center;
+  /*
   display: grid;
   grid-template-rows: 45vh 45vh;
-  grid-template-columns: 33vw 33vw 33vw;
+  grid-template-columns: 14vw 25vw 25vw 25vw 14vw;*/
 
-  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  background-color:aquamarine;
 }
 
 .title {
+  /*
   display: grid;
   align-items: center;
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 1;
-  grid-row-end: 2;
+  grid-row-end: 2;*/
+
+  width: 80vw;
 }
 
 
 .skills {
-  display: grid;
   font-size: 1.3em;
   font-family: 'Caveat', sans-serif;
   text-align: center;
   /* padding: 10px;*/
-  height: 45vh;
+  height: 30vh;
   color: black;
-  grid-column-start: 2;
-  grid-column-end: 3;
+  /*
+  grid-column-start: 3;
+  grid-column-end: 4;
   grid-row-start: 2;
-  grid-row-end: 3;
+  grid-row-end: 3;*/
 }
 
 .GD,
@@ -64,7 +72,6 @@
   justify-content: flex-start;
   align-items: center;
   width: 100%;
-  padding: 20px;
   background-color: white;
   color: black;
 }
@@ -113,8 +120,7 @@
 
 @media (min-width: 700px) {
   .title {
-    width: 55vw;
-    height: 45vh;
+    height: 30vh;
     align-items: center;
   }
 }
