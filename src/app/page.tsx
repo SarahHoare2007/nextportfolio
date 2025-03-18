@@ -35,7 +35,7 @@ export default function Home() {
             start: 'bottom bottom',
             end: 'top 10%',
             scrub: 1,
-            markers: true,
+          //  markers: true,
           },
         });
       })
@@ -50,7 +50,7 @@ export default function Home() {
           //   start: 'top bottom',
           //   //end: 'top 20%',
           //   scrub: true,
-          markers: true,
+         // markers: true,
           // },
         });
       })
@@ -90,7 +90,7 @@ export default function Home() {
             alt="album cover"
           /></div>
         </Link>
-        <Link href="/projects#graphic-illustrations" className={styles.section}>Graphic Illustrations</Link>
+        <Link href="/projects#graphic-illustrations" className={styles.section}>Illustrations</Link>
         <p>I have created many illustrations for a variety of uses. Add more words here.</p>
       </div>
 
@@ -106,8 +106,8 @@ export default function Home() {
             /></div>
         </Link>
         <div className={styles.description}>
-          <Link href="/projects#graphic-design" className={styles.section}>Graphic Design Work</Link>
-          <p>I enjoy creating logos, refining logo designs, and putting together brand packages.</p></div>
+          <Link href="/projects#graphic-design" className={styles.section}>Brand Identity</Link>
+          <p>I enjoy creating logos, refining designs, and putting together brand packages.</p></div>
       </div>
 
       <div className={styles.griditem}>
