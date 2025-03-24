@@ -23,8 +23,12 @@ import rapptor from '@/assets/images/rapptor_page.png'
 import iceburg from '@/assets/images/iceburgpg.png'
 
 const PROJECTS = [
-    { id: 1, slug: "wrapper-paper", src: wrappingpg, alt: 'Wrapping Paper', 
-        desc: 'This wrapping paper was designed for a contest hosted by Premier Press and was selected as one of the three finalists. It was printed and distributed by Premier Press.' },
+    {
+        id: 1, slug: "wrapper-paper",
+        src: [wrappingpg, wrappinglte, wrappingdrk],
+        alt: 'Wrapping Paper',
+        desc: 'This wrapping paper was designed for a contest hosted by Premier Press and was selected as one of the three finalists. It was printed and distributed by Premier Press.'
+    },
     { id: 2, slug: "iceburg-icecream", src: iceburg, width: 250, height: 200, alt: 'IceBurg IceCream', desc: 'hello world' },
     { id: 3, slug: "fox", src: fox, width: 250, height: 250, alt: 'Fox Illustration', desc: 'hello world' },
     { id: 4, slug: "marine-pattern", src: pattern, width: 250, height: 250, alt: 'Marine Creatures Pattern', desc: 'hello world' },

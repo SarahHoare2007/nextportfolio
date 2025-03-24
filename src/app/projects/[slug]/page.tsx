@@ -20,11 +20,13 @@ export default async function ProjectPage({
 
     return (
         <main className={pageStyles.main}>
-            <h1>{project.alt}</h1>
+            <h1 className={styles.heading}>{project.alt}</h1>
             <div className={styles.format}>
                 <div className={styles.arrow}></div>
-                    <Image className={styles.image} src={project.src} fill style={{ objectFit: "contain" }} alt={project.alt} />
-                    <p className={styles.text}> {project.desc}</p>
+                <Image className={styles.image} src={project.src} fill style={{ objectFit: "contain" }} alt={project.alt} />
+                <p className={styles.text}> {project.desc}</p>
+                <Image className={styles.imagex} src={project.src} fill style={{ objectFit: "contain" }} alt={project.alt} />
+                <Image className={styles.imagex} src={project.src} fill style={{ objectFit: "contain" }} alt={project.alt} />
             </div>
         </main >
     );
