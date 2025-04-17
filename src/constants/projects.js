@@ -24,6 +24,7 @@ import iceburg from '@/assets/images/iceburgpg.png'
 
 const PROJECTS = [
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     {
         id: 1, slug: "wrapper-paper",
         src: [wrappingpg, wrappinglte, wrappingdrk],
@@ -33,11 +34,16 @@ const PROJECTS = [
     { id: 2, slug: "iceburg-icecream", src: iceburg, width: 250, height: 200, alt: 'IceBurg IceCream', desc: 'hello world' },
     { id: 3, slug: "fox", src: fox, width: 250, height: 250, alt: 'Fox Illustration', desc: 'hello world' },
 =======
+=======
+>>>>>>> Stashed changes
     { id: 1, slug: "wrapper-paper", src: wrappingpg, alt: 'Wrapping Paper', 
         desc: 'This wrapping paper was designed for a contest hosted by Premier Press and was selected as one of the three finalists. It was printed and distributed by Premier Press.' },
     { id: 2, slug: "iceburg-icecream", src: iceburg, width: 250, height: 200, alt: 'IceBurg IceCream', 
         desc: 'This project started as a label design and ended as a brand package, including a website, newsletter template, and magazine ads. This design won 3rd place for the graphic design category of the SCAD design challenge.' },
     { id: 3, slug: "fox", src: fox, width: 250, height: 250, alt: 'Fox Illustration', desc: 'This is a fox illustration I completed as part of my illustrator class.' },
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     { id: 4, slug: "marine-pattern", src: pattern, width: 250, height: 250, alt: 'Marine Creatures Pattern', desc: 'hello world' },
     { id: 5, slug: "monogram", src: monogram, width: 250, height: 250, alt: 'Monogram Illustration', desc: 'hello world' },
