@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import styles from "./page.module.css";
-import watermelon from '../assets/images/watermelon.png';
+import inlander from '@/assets/images/inlander.png'
 import duck from '../assets/images/duck.jpg'
 import album from '../assets/images/albumcover.png';
 import title from '../assets/images/mainheading.svg';
@@ -99,7 +99,7 @@ export default function Home() {
           <div className={styles.square}>
             <Image
               ref={(e) => setRef(imageRefs, e)}
-              src={watermelon}
+              src={inlander}
               width={300}
               height={300}
               alt="watermelon illustration"

@@ -25,9 +25,24 @@ export default async function ProjectPage({
                 <div className={styles.arrow}></div>
                 <Image className={styles.image} src={project.src} fill style={{ objectFit: "contain" }} alt={project.alt} />
                 <p className={styles.text}> {project.desc}</p>
-                <Image className={styles.imagex} src={project.src} fill style={{ objectFit: "contain" }} alt={project.alt} />
-                <Image className={styles.imagex} src={project.src} fill style={{ objectFit: "contain" }} alt={project.alt} />
+                
+                
             </div>
+            <div className={styles.projectImages}>
+                {project?.images?.map((image, index) => {
+
+                    return (
+                        <div key={`image-${index}`} className={styles.projectImage}>
+                            <Image 
+                            src={image.src} 
+                            alt={image.alt} 
+                            width={image.width} 
+                            height={image.height} 
+                            />
+                        </div>
+                    )   
+                })}
+                </div>
         </main >
     );
 }

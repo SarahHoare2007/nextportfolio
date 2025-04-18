@@ -1,68 +1,74 @@
+import Image from 'next/image';
 import fox from '@/assets/images/fox.png'
 import design from '@/assets/images/whatisdesign.png'
 import duck from '@/assets/images/duck.jpg'
-import travel from '@/assets/images/Travel-poster.png'
 import butterflies from '@/assets/images/butterflies.jpg'
-import watermelon from '@/assets/images/watermelon.png'
-import dancer from '@/assets/images/dancer.jpg'
-import monogram from '@/assets/images/monogram.png'
-import businesspack from '@/assets/images/businesspackage.png'
+import preflight from '@/assets/images/prefight.png'
+import sfff from '@/assets/images/sfff.png'
+import inlander from '@/assets/images/inlander.png'
+import animationpage from '@/assets/images/animationpage.png'
 import pattern from '@/assets/images/pattern.png'
 import nomu from '@/assets/images/nomu.png'
 import albumcover from '@/assets/images/albumcover.png'
 import books from '@/assets/images/book covers.png'
+import book1 from '@/assets/images/book cover1.png'
+import book2 from '@/assets/images/book cover 2.png'
+import book3 from '@/assets/images/book cover 3.png'
 import quote from '@/assets/images/quoteme.png'
 import creativeinvention from '@/assets/images/creativeinvention.png'
 import favtype from '@/assets/images/broadwayposter.png'
 import explore from '@/assets/images/exploremagazine.png'
-import recipe from '@/assets/images/recipe-card.png'
 import wrappinglte from '@/assets/images/wrappingpaper_light.png'
 import wrappingdrk from '@/assets/images/wrappingpaper_dark.png'
 import wrappingpg from '@/assets/images/wrappingpaper_page.png'
 import rapptor from '@/assets/images/rapptor_page.png'
 import iceburg from '@/assets/images/iceburgpg.png'
+import heart from '@/assets/images/porcelainheart.png'
+
 
 const PROJECTS = [
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
     {
-        id: 1, slug: "wrapper-paper",
-        src: [wrappingpg, wrappinglte, wrappingdrk],
-        alt: 'Wrapping Paper',
+        id: 1, 
+        slug: "wrapper-paper",
+        src: wrappingpg,
+        images: [
+            {src: wrappingpg, width: 250, height: 200, alt: 'paper'},
+            {src: wrappinglte, width:200, height: 250, alt: 'paper2'},
+            {src: wrappingdrk, width: 200, height: 250, alt: 'paper3'}
+        ],
         desc: 'This wrapping paper was designed for a contest hosted by Premier Press and was selected as one of the three finalists. It was printed and distributed by Premier Press.'
     },
-    { id: 2, slug: "iceburg-icecream", src: iceburg, width: 250, height: 200, alt: 'IceBurg IceCream', desc: 'hello world' },
-    { id: 3, slug: "fox", src: fox, width: 250, height: 250, alt: 'Fox Illustration', desc: 'hello world' },
-=======
-=======
->>>>>>> Stashed changes
-    { id: 1, slug: "wrapper-paper", src: wrappingpg, alt: 'Wrapping Paper', 
-        desc: 'This wrapping paper was designed for a contest hosted by Premier Press and was selected as one of the three finalists. It was printed and distributed by Premier Press.' },
-    { id: 2, slug: "iceburg-icecream", src: iceburg, width: 250, height: 200, alt: 'IceBurg IceCream', 
-        desc: 'This project started as a label design and ended as a brand package, including a website, newsletter template, and magazine ads. This design won 3rd place for the graphic design category of the SCAD design challenge.' },
-    { id: 3, slug: "fox", src: fox, width: 250, height: 250, alt: 'Fox Illustration', desc: 'This is a fox illustration I completed as part of my illustrator class.' },
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
+    { id: 2, slug: "iceburg-icecream", src: iceburg, 
+        images: [
+       {src: iceburg, width: 300, height: 200, alt: 'IceBurg IceCream'}, 
+        ],
+        desc: 'This is a design package I created for a fictional IceCream brand. It started out as a label design, and ended with newsletter layouts, magazine layouts, and a website design. This campaign was awarded a Silver Addy at the AAF Spokane American Advertising Awards in 2025, as well as third place in the highschool student graphic design SCAD challenge in 2025.' },
+    { id: 3, slug: "fox", src: fox, width: 250, height: 250, alt: 'Fox Illustration', desc: 'This illustration was one of my first projects I made with Adobe Illustrator. The project was to illustrate any animal in any style to practice the tools of illustrator.' },
     { id: 4, slug: "marine-pattern", src: pattern, width: 250, height: 250, alt: 'Marine Creatures Pattern', desc: 'hello world' },
-    { id: 5, slug: "monogram", src: monogram, width: 250, height: 250, alt: 'Monogram Illustration', desc: 'hello world' },
-    { id: 6, slug: "watermelon", src: watermelon, width: 250, height: 250, alt: 'Watermelon Illustration' },
-    { id: 7, slug: "book-covers", src: books, width: 250, height: 200, alt: 'Book Covers' },
+    { id: 5, slug: "inlander", src: inlander, width: 250, height: 250, alt: 'inlander', desc: 'I made this magazine cover in Adobe Photoshop for the Inlander Newspaper as a cover for their 2025 summer camps section.' },
+    { id: 6, slug: "preflight", src: preflight, width: 250, height: 250, alt: 'Watermelon Illustration' },
+    { id: 7, slug: "book-covers", src: books, 
+        images: [
+            {src: book1, width: 250, height: 200, alt: 'Book Covers'},
+            {src: book2, width: 250, height: 200, alt: 'Book Covers'} ,
+            {src: book3, width: 250, height: 200, alt: 'Book Covers'} ],
+            desc: 'books'},
     { id: 8, slug: "album-cover", src: albumcover, width: 250, height: 250, alt: 'Song Album Cover' },
     { id: 9, slug: "quote-me", src: quote, width: 200, height: 250, alt: 'Quote Poster' },
     { id: 10, slug: "nomu", src: nomu, width: 250, height: 250, alt: 'Nomu Logo' },
     { id: 11, slug: "explore-magazine", src: explore, width: 200, height: 250, alt: 'Explore Magazine Cover' },
     { id: 12, slug: "what-is-design", src: design, width: 200, height: 250, alt: 'What Is Design' },
-    { id: 13, slug: "recipe-card", src: recipe, width: 250, height: 200, alt: 'Recipe Card' },
     { id: 14, slug: "favorite-type", src: favtype, width: 200, height: 250, alt: 'Favorite Type Poster' },
     { id: 15, slug: "reset-ads", src: creativeinvention, width: 200, height: 250, alt: 'Reset Headset Ads' },
-    { id: 16, slug: "business-package", src: businesspack, width: 200, height: 250, alt: 'Business Package' },
-    { id: 17, slug: "travel-poster", src: travel, width: 200, height: 250, alt: 'Travel Poster' },
-    { id: 18, slug: "dancer", src: dancer, width: 200, height: 250, alt: 'Dancer Painting' },
-    { id: 19, slug: "butterflies", src: butterflies, width: 200, height: 250, alt: 'Ink Butterflies' },
-    { id: 20, slug: "duck", src: duck, width: 250, height: 200, alt: 'Ink Duck' },
+    { id: 16, slug: "stopmotion-animation", src: animationpage, width: 200, height: 250, alt: 'Stopmotion Animation' },
+    { id: 18, slug: "fall-folk-festival", src: sfff, width: 200, height: 250, alt: 'Spokane Fall Folk Festival poster' },
+    { id: 20, slug: "scribblism", src: duck, 
+        images: [
+            {src: butterflies, width: 200, height: 250, alt: 'Ink Butterflies' },
+        ],
+        desc: 'scribblism art'},
     { id: 21, slug: "rapptor", src: rapptor, width: 250, height: 250, alt: 'rapptor' },
+    { id: 22, slug: "heart", src: heart, width: 250, height: 250, alt: 'heart' },
 ];
 
 export default PROJECTS;
