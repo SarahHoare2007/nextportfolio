@@ -52,7 +52,7 @@ const PROJECTS = [
     { id: 3, slug: "inlander", src: inlander, width: 250, height: 250, alt: 'inlander', desc: 'I made this magazine cover in Adobe Photoshop for the Inlander Newspaper as a cover for their 2025 summer camps section.' },
     { id: 6, slug: "preflight", src: preflight,
          width: 250, height: 250, alt: 'Watermelon Illustration' },
-    { id: 7, slug: "book-covers", src: books, 
+    { id: 7, slug: "book-covers", src: books, alt: 'books',
         images: [
             {src: book1, width: 250, height: 200, alt: 'Book Covers'},
             {src: book2, width: 250, height: 200, alt: 'Book Covers'} ,
@@ -76,7 +76,7 @@ const PROJECTS = [
         width: 200, height: 250, alt: 'Stopmotion Animation' },
     { id: 18, slug: "fall-folk-festival", src: sfff, 
         width: 200, height: 250, alt: 'Spokane Fall Folk Festival poster' },
-    { id: 20, slug: "scribblism", src: duck, 
+    { id: 20, slug: "scribblism", src: duck, alt: 'scibblism',
         images: [
             {src: butterflies, width: 200, height: 250, alt: 'Ink Butterflies' },
         ],
