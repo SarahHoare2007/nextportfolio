@@ -102,7 +102,7 @@ export default function Home() {
               src={inlander}
               width={300}
               height={300}
-              alt="watermelon illustration"
+              alt="inlander"
             /></div>
         </Link>
         <div className={styles.description}>

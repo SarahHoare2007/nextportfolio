@@ -38,7 +38,7 @@
     height: 0;
     border-top: 25px solid transparent;
     border-bottom: 25px solid transparent;
-    border-right: 45px solid black;
+    border-right: 45px solid #5FA9A0;
 
     grid-column-start: 2;
     grid-column-end: 3;
