@@ -38,7 +38,6 @@ const PROJECTS = [
             {src: wrappingdrk, width: 200, height: 250, alt: 'paper3'}
         ],
         desc: 'This wrapping paper was designed for a contest hosted by Premier Press and was selected as one of the three finalists. It was printed and distributed by Premier Press.'
-        alt: 'wrapping paper design'
     },
     { id: 2, slug: "iceburg-icecream", src: iceburg, 
         alt: 'ice cream brand design',
