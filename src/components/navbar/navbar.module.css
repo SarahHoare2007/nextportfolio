@@ -63,6 +63,14 @@
     .nav {
         padding: 45px 20px 10px 215px;
     }
+    .shape {
+        border-left: 0px solid transparent;
+        border-right: 400px solid transparent;
+        border-top: 130px solid  #5FA9A0;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
 }
 
 @media (min-width:800px) {
@@ -94,8 +102,8 @@
 
     .shape {
         border-left: 0px solid transparent;
-        border-right: 600px solid transparent;
-        border-top: 250px solid #9BD7D0;
+        border-right: 400px solid transparent;
+        border-top: 130px solid  #5FA9A0;
         position: absolute;
         top: 0px;
         left: 0px;
@@ -103,8 +111,8 @@
 
     .logo {
         position: absolute;
-        left: 50px;
-        top: 30px;
+        left: 40px;
+        top: 15px;
         width: 150;
         height: 150;
     }

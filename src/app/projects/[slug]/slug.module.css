@@ -34,14 +34,15 @@
 }
 
 .arrow {
+    display: grid;
     width: 0;
     height: 0;
     border-top: 25px solid transparent;
     border-bottom: 25px solid transparent;
     border-right: 45px solid #5FA9A0;
 
-    grid-column-start: 2;
-    grid-column-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 2;
 }

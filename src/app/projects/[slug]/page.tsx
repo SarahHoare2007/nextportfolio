@@ -3,6 +3,7 @@ import styles from "@/app/projects/[slug]/slug.module.css";
 import React from 'react';
 import Image from "next/image";
 import PROJECTS from "@/constants/projects";
+import Link from "next/link";
 
 export default async function ProjectPage({
     params,
@@ -22,7 +23,7 @@ export default async function ProjectPage({
         <main className={pageStyles.main}>
             <h1 className={styles.heading}>{project.alt}</h1>
             <div className={styles.format}>
-                <div className={styles.arrow}></div>
+                <Link href={"../"}><div className={styles.arrow}></div></Link>
                 <Image className={styles.image} src={project.src} fill style={{ objectFit: "contain" }} alt={project.alt} />
                 <p className={styles.text}> {project.desc}</p>
                 

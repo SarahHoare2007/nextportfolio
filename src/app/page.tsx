@@ -65,11 +65,12 @@ export default function Home() {
     <main className={styles.main}>
 
       <div className={styles.abovefold}>
-        <Image className={styles.title}
+       {/*} <Image className={styles.title}
           src={title}
           width={600}
           height={140}
-          alt="Sarah Sioux Studios" />
+          alt="Sarah Sioux Studios" />*/}
+          <h1 className={styles.title}>Sarah Sioux Studios</h1>
 
 
         <div className={styles.skills}>
@@ -80,7 +81,7 @@ export default function Home() {
 
       </div>
 
-      <div className={styles.griditem}>
+    {/*  <div className={styles.griditem}>
         <Link href="/projects#graphic-illustrations">
           <div className={styles.square}><Image
             ref={(e) => setRef(imageRefs, e)}
@@ -88,7 +89,7 @@ export default function Home() {
             width={300}
             height={300}
             alt="album cover"
-          /></div>
+          /></div> 
         </Link>
         <Link href="/projects#graphic-illustrations" className={styles.section}>Illustrations</Link>
         <p>I have created many illustrations for a variety of uses. Add more words here.</p>
@@ -121,8 +122,8 @@ export default function Home() {
         </div>
         <Link href="/projects#fineart" className={styles.section}>Fine Arts</Link>
         <p>In my free time I work on many types of fine arts.</p>
-      </div>
+      </div> */}
 
     </main >
-  );
+ );
 }
