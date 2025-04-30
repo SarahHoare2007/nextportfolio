@@ -4,6 +4,7 @@ import React from 'react';
 import Image from "next/image";
 import projects from '@/assets/images/projects.svg';
 import PROJECTS from "@/constants/projects";
+import Footer from '@/components/footer';
 
 export default function Projects() {
 
@@ -35,7 +36,9 @@ export default function Projects() {
                 alt="Projects" />
 
             <Gallery />
+            <Footer />
         </main>
+
     );
 
 }

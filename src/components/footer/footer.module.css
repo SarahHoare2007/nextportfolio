@@ -5,7 +5,7 @@
 
 .footer {
     font-family: "besley", serif;
-    color:black;
+    color: black;
     display: flex;
     background-color: #5FA9A0;
     color: aliceblue;
@@ -18,15 +18,15 @@
 
     font-family: "Figtree", sans-serif;
 
-    padding: 30px;
     padding-top: 60px;
 
     position: relative;
+    margin: 0%;
 }
 
 .footsocials {
     font-family: "besley", serif;
-    color:black;
+    color: black;
     display: flex;
     flex-direction: column;
     line-height: 25px;
@@ -44,7 +44,7 @@
 
 .footlinks {
     font-family: "besley", serif;
-    color:black;
+    color: black;
     list-style: none;
     line-height: 25px;
     display: flex;
@@ -65,14 +65,16 @@
     position: absolute;
     bottom: 0px;
     right: 0px;
+    margin: 0%;
 }
 
 @media (min-width:800px) {
     .shape {
         border-left: 500px solid transparent;
-    border-right: 0px solid transparent;
-    border-bottom: 300px solid #9BD7D0;
+        border-right: 0px solid transparent;
+        border-bottom: 300px solid #9BD7D0;
     }
+
     .footer {
         padding: 30px;
         flex-direction: row;

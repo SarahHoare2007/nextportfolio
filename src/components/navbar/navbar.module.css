@@ -35,6 +35,7 @@
     left: 0px;
 
     z-index: 0;
+
 }
 
 .logo {
@@ -63,10 +64,11 @@
     .nav {
         padding: 45px 20px 10px 215px;
     }
+
     .shape {
         border-left: 0px solid transparent;
         border-right: 400px solid transparent;
-        border-top: 130px solid  #5FA9A0;
+        border-top: 130px solid #5FA9A0;
         position: absolute;
         top: 0px;
         left: 0px;
@@ -101,12 +103,12 @@
     }
 
     .shape {
-        border-left: 0px solid transparent;
-        border-right: 400px solid transparent;
-        border-top: 130px solid  #5FA9A0;
         position: absolute;
         top: 0px;
         left: 0px;
+
+        width: 20%;
+        height: 100px;
     }
 
     .logo {

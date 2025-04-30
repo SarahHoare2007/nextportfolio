@@ -1,6 +1,7 @@
 import styles from "./resume.module.css";
 import Image from "next/image";
 import resume from "../../assets/images/resume.svg";
+import Footer from '@/components/footer';
 
 
 export default function Resume() {
@@ -37,9 +38,10 @@ export default function Resume() {
                     </ul>
                 </div>
             </div>
-            
+
             <div className={styles.download}><a href="/assets/newresume.pdf" target="_blank"> Download my resume here!</a></div>
 
+            <Footer />
         </main >
     );
 }

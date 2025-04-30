@@ -1,6 +1,7 @@
 import styles from "./blog.module.css";
 import Image from "next/image";
 import blogs from "../../assets/images/blog.png";
+import Footer from '@/components/footer';
 
 
 export default function blog() {
@@ -20,6 +21,7 @@ export default function blog() {
                 <dt className={styles.blogtitle}><a href={`./../assets/entry1.html`}>Publishing my portfolio</a></dt>
                 <dd className={styles.date}>11/29/2023</dd>
             </dl>
+            <Footer />
         </main>
     )
 }

@@ -10,6 +10,8 @@ import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import { useRef } from 'react';
 import Link from "next/link";
+import Lottie from "lottie-react";
+import swiggle from "@/assets/animations/swiggleline.json";
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -35,7 +37,7 @@ export default function Home() {
             start: 'bottom bottom',
             end: 'top 10%',
             scrub: 1,
-          //  markers: true,
+            //  markers: true,
           },
         });
       })
@@ -50,7 +52,7 @@ export default function Home() {
           //   start: 'top bottom',
           //   //end: 'top 20%',
           //   scrub: true,
-         // markers: true,
+          // markers: true,
           // },
         });
       })
@@ -65,12 +67,12 @@ export default function Home() {
     <main className={styles.main}>
 
       <div className={styles.abovefold}>
-       {/*} <Image className={styles.title}
+        {/*} <Image className={styles.title}
           src={title}
           width={600}
           height={140}
           alt="Sarah Sioux Studios" />*/}
-          <h1 className={styles.title}>Sarah Sioux Studios</h1>
+        <h1 className={styles.title}>Sarah Sioux Studios</h1>
 
 
         <div className={styles.skills}>
@@ -81,7 +83,7 @@ export default function Home() {
 
       </div>
 
-    {/*  <div className={styles.griditem}>
+      {/*  <div className={styles.griditem}>
         <Link href="/projects#graphic-illustrations">
           <div className={styles.square}><Image
             ref={(e) => setRef(imageRefs, e)}
@@ -125,5 +127,5 @@ export default function Home() {
       </div> */}
 
     </main >
- );
+  );
 }

@@ -4,6 +4,9 @@ import React from 'react';
 import Image from "next/image";
 import PROJECTS from "@/constants/projects";
 import Link from "next/link";
+import YouTube from 'react-youtube';
+import ProjectDisplay from "@/components/project";
+import Footer from '@/components/footer';
 
 export default async function ProjectPage({
     params,
@@ -15,35 +18,22 @@ export default async function ProjectPage({
 
     const project = PROJECTS.find((p) => p.slug === slug);
 
+    const opts = {
+        height: '390',
+        width: '640',
+        playerVars: {
+            autoplay: 1,
+        },
+    };
+
     if (!project) {
         return null;
     }
 
     return (
         <main className={pageStyles.main}>
-            <h1 className={styles.heading}>{project.alt}</h1>
-            <div className={styles.format}>
-                <Link href={"../"}><div className={styles.arrow}></div></Link>
-                <Image className={styles.image} src={project.src} fill style={{ objectFit: "contain" }} alt={project.alt} />
-                <p className={styles.text}> {project.desc}</p>
-                
-                
-            </div>
-            <div className={styles.projectImages}>
-                {project?.images?.map((image, index) => {
-
-                    return (
-                        <div key={`image-${index}`} className={styles.projectImage}>
-                            <Image 
-                            src={image.src} 
-                            alt={image.alt} 
-                            width={image.width} 
-                            height={image.height} 
-                            />
-                        </div>
-                    )   
-                })}
-                </div>
+            <ProjectDisplay project={project} />
+            <Footer />
         </main >
     );
 }

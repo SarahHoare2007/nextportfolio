@@ -2,6 +2,7 @@ import styles from "./about.module.css";
 import headshot from '../../assets/images/headshot.svg';
 import Image from "next/image";
 import aboutme from '../../assets/images/aboutme.svg';
+import Footer from '@/components/footer';
 
 export default function About() {
     return (
@@ -17,8 +18,7 @@ export default function About() {
 
 
                     <p>  My name is Sarah Hoare and I am a 18 year old artist, dancer, and graphic designer. Currently, I
-                        am a full-time student at
-                        North Idaho College working towards an AAS in Graphic and Web Design.
+                        am a full-time student at North Idaho College working towards an AAS in Graphic and Web Design.
                     </p> <br /><p>
                         I enjoy creating logos, illustrations, and original art pieces. I have showcased my art
                         in local craft fairs and markets, art shows, and the state fair.
@@ -34,7 +34,7 @@ export default function About() {
                     alt="Me!"
                 /></div>
             </div>
-
+            <Footer />
         </main>
     );
 }

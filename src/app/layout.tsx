@@ -3,7 +3,6 @@ import { Inter } from "next/font/google";
 import { Figtree } from "next/font/google";
 import "./globals.css";
 import Navbar from '../components/navbar';
-import Footer from '../components/footer';
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v13-appRouter';
 import { ThemeProvider } from '@mui/material/styles';
 import theme from '../components/global/theme';
@@ -31,7 +30,7 @@ export default function RootLayout({
             <div className="main-wrapper">
               {children}
 
-              <Footer />
+              {/* remove footer from layout and add it to each page individually.*/}
             </div>
 
           </ThemeProvider>

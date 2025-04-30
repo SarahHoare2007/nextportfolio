@@ -68,8 +68,8 @@
     position: absolute;
     top: 0;
     left: 0;
-     width: 100%;
-     height: 100%;
+    width: 100%;
+    height: 100%;
     background: rgba(53, 131, 122, 0.5);
     /* Semi-transparent cover */
     color: #fff;
@@ -106,7 +106,10 @@
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
+        width: 85%;
+        justify-content: space-between;
     }
+
     .galleryitem {
         /*flex: 1 1 calc(50% - 16px);
         /* Two items per row, adjust for gap */
@@ -114,8 +117,8 @@
         flex-shrink: 1;
         max-width: calc(50% - 10px);
         /* Ensure proper width */
-        
-    max-height: calc(50% - 10px);
+
+        max-height: calc(50% - 10px);
         box-sizing: border-box;
     }
 
