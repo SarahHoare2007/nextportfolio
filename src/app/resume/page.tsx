@@ -24,15 +24,16 @@ export default function Resume() {
                 <div className={styles.section}>
                     <h1>Skills:</h1>
                     <ul>
-                        <li>Adobe Illustrator</li>
+                        <li>HTML & CSS</li>
                         <li>Leadership</li>
                         <li>Creativity</li>
                     </ul>
                 </div>
                 <div className={styles.section}>
-                    <h1>A third thing:</h1>
+                    <h1>Recent Projects:</h1>
                     <ul>
-                        <li>I like adorable animals!</li>
+                        <li>NIC GDES Portfolio Show Team Lead</li>
+                        <li>Design Intern at The Blissful Whisk</li>
                     </ul>
                 </div>
             </div>

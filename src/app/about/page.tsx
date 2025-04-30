@@ -16,7 +16,7 @@ export default function About() {
                         alt="About Me!" />
 
 
-                    <p>  My name is Sarah Hoare and I am a 17 year old artist, dancer, and graphic designer. Currently, I
+                    <p>  My name is Sarah Hoare and I am a 18 year old artist, dancer, and graphic designer. Currently, I
                         am a full-time student at
                         North Idaho College working towards an AAS in Graphic and Web Design.
                     </p> <br /><p>
