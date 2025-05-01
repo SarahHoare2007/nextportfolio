@@ -1,4 +1,5 @@
 "use client";
+import React from "react";
 import Image from "next/image";
 import styles from "./page.module.css";
 import inlander from '@/assets/images/inlander.png'
@@ -9,21 +10,21 @@ import { gsap } from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import { useRef } from 'react';
-import Link from "next/link";
-import Lottie from "lottie-react";
-import swiggle from "@/assets/animations/swiggleline.json";
+import MyLottieComponent from "@/components/animations/swiggle";
 
 gsap.registerPlugin(ScrollTrigger)
 
 
 export default function Home() {
+  
   const mainRef = useRef();
   const imageRefs = useRef([]);
   const descRefs = useRef([]);
 
   const setRef = (ref: any, element: any) => {
     ref.current.push(element);
-  }
+  };
+  
 
   useGSAP(
     () => {
@@ -55,13 +56,19 @@ export default function Home() {
           // markers: true,
           // },
         });
-      })
+      });
 
     },
+
+    
     { scope: mainRef }
+
+    
   );
 
   //projects start below fold. everything above spreads out
+
+
 
   return (
     <main className={styles.main}>
@@ -74,13 +81,16 @@ export default function Home() {
           alt="Sarah Sioux Studios" />*/}
         <h1 className={styles.title}>Sarah Sioux Studios</h1>
 
+        <div className="flex flex-col items-center mx-auto font-mono text-sm lg:flex">
+        <p className="">Lottie Animation</p>
+        <MyLottieComponent />
+      </div>
 
-        <div className={styles.skills}>
+     <div className={styles.skills}>
           <div className={styles.GD} ref={(e) => setRef(descRefs, e)}>Graphic Design</div>
           <div className={styles.IL} ref={(e) => setRef(descRefs, e)}>Illustration</div>
           <div className={styles.WD} ref={(e) => setRef(descRefs, e)}>Web Design</div>
         </div>
-
       </div>
 
       {/*  <div className={styles.griditem}>
