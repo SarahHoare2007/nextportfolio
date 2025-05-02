@@ -1,45 +1,50 @@
+"use client";
 import Link from "next/link";
 import Image from "next/image";
 import style from "./navbar.module.css";
 import Logo from '../../assets/images/logo.png';
+import { useState } from 'react';
+import MenuIcon from '@mui/icons-material/Menu';
+import CloseIcon from '@mui/icons-material/Close';
+import IconButton from '@mui/material/IconButton';
 
 
 const Navbar = () => {
+ 
+    
+  const [isOpen, setIsOpen] = useState(false);
 
+  const toggleMenu = () => setIsOpen(!isOpen);
 
     return (
         <div className={style.background}>
             <nav>
                 <div className={style.shape}></div>
                 <Link href="/" className={style.logo}>
-                    {/* FIX LOGO SIZE.USE PHOTOSHOP TO CHANGE SIZE AND SUBMIT IMAGE FOR MEDIA SIZES */}
                     <Image src={Logo} width={100} height={100} alt="logo" />
                 </Link>
-                <ul className={style.nav}>
+                <div className={style.hamburger}>
+                <IconButton  onClick={toggleMenu} 
+                aria-label="toggle menu" sx={{ color: 'black' }}>
+
+                {isOpen ? <CloseIcon /> : <MenuIcon />}
+                </IconButton>
+      </div>
+                <ul className={`${style.nav} ${isOpen ? style.active : ''}`}>
                     <li>
-                        <Link href="/about">
-                            About Me
-                        </Link>
+                        <Link href="/about"> About Me </Link>
                     </li>
                     <li>
-                        <Link href="/resume">
-                            Resume
-                        </Link>
+                        <Link href="/resume"> Resume </Link>
                     </li>
                     <li>
-                        <Link href="/blog">
-                            Blog
-                        </Link>
+                        <Link href="/blog"> Blog </Link>
                     </li>
                     <li>
-                        <Link href="/projects">
-                            Projects
-                        </Link>
+                        <Link href="/projects"> Projects </Link>
                     </li>
                     <li>
-                        <Link href="/contact">
-                            Contact Me
-                        </Link>
+                        <Link href="/contact"> Contact Me </Link>
                     </li>
                 </ul>
 

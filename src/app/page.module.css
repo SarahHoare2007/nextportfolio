@@ -15,8 +15,10 @@
 .abovefold {
   height: 70vh;
   width: 100%;
-  /*background-color: grey;*/
+ /* background-color: grey;*/
   align-items: center;
+
+  margin-top: 30px;
   
   display: grid;
   grid-template-rows: 25vh 25vh 25vh 25vh;
@@ -37,13 +39,13 @@
   grid-row-end: 2;
 
   font-family: 'Didot', modern, serif;
-  font-size: 5em;
+  font-size: 3em;
   text-align: center;
 }
 
 
 .skills {
-  font-size: 1.2em;
+  font-size: .9em;
   font-family: 'Caveat', sans-serif;
   text-align: center;
   /* padding: 10px;*/
@@ -67,8 +69,9 @@
 }
 
 .main {
-  display: flex;
-  flex-direction: column;
+  /*display: flex;
+  flex-direction: column;*/
+  display: grid;
   justify-content: flex-start;
   align-items: center;
   width: 100%;
@@ -87,42 +90,31 @@
   color: black;
 }
 
-/*image*/
-
-.section {
-  font-family: "GFS Didot", serif;
-  font-size: 25px;
-  margin-top: 75px;
-}
-
-.section p {
-  font-family: "proxima-nova", serif;
-  font-weight: 400;
-  font-style: normal;
-
-}
-
-.griditem {
-  padding-bottom: 25px;
-  width: 350px;
-  text-align: center;
-}
-
-.griditem p {
-  padding: 20px 10px 0 10px;
-}
-
-.square {
-  width: 350px;
-  height: 250px;
-  margin-top: 50px;
+.arrow {
+  display: grid;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
 }
 
 @media (min-width: 700px) {
   .title {
     height: 30vh;
     align-items: center;
+    font-size: 5em;
   }
+
+
+  .abovefold {
+  grid-template-rows: 25vh 25vh 25vh 25vh;
+  grid-template-columns: 15vw 70vw 15vw;
+  }
+
+  .skills {
+    font-size: 1.2em;
+  }
+
 }
 
 @media (min-width: 1000px) {

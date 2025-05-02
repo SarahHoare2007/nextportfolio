@@ -11,6 +11,8 @@ import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import { useRef } from 'react';
 import MyLottieComponent from "@/components/animations/swiggle";
+import HeartDraw from "@/components/animations/heart";
+import ArrowDraw from "@/components/animations/arrow";
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -81,9 +83,9 @@ export default function Home() {
           alt="Sarah Sioux Studios" />*/}
         <h1 className={styles.title}>Sarah Sioux Studios</h1>
 
-        <div className="flex flex-col items-center mx-auto font-mono text-sm lg:flex">
-        <p className="">Lottie Animation</p>
+        <div className="flex flex-col items-center mx-auto lg:flex">
         <MyLottieComponent />
+        <HeartDraw />
       </div>
 
      <div className={styles.skills}>
@@ -93,49 +95,9 @@ export default function Home() {
         </div>
       </div>
 
-      {/*  <div className={styles.griditem}>
-        <Link href="/projects#graphic-illustrations">
-          <div className={styles.square}><Image
-            ref={(e) => setRef(imageRefs, e)}
-            src={album}
-            width={300}
-            height={300}
-            alt="album cover"
-          /></div> 
-        </Link>
-        <Link href="/projects#graphic-illustrations" className={styles.section}>Illustrations</Link>
-        <p>I have created many illustrations for a variety of uses. Add more words here.</p>
+      <div className={styles.arrow}>
+      <ArrowDraw />
       </div>
-
-      <div className={styles.griditem}>
-        <Link href="/projects#graphic-design">
-          <div className={styles.square}>
-            <Image
-              ref={(e) => setRef(imageRefs, e)}
-              src={inlander}
-              width={300}
-              height={300}
-              alt="inlander"
-            /></div>
-        </Link>
-        <div className={styles.description}>
-          <Link href="/projects#graphic-design" className={styles.section}>Brand Identity</Link>
-          <p>I enjoy creating logos, refining designs, and putting together brand packages.</p></div>
-      </div>
-
-      <div className={styles.griditem}>
-        <div className={styles.square}> <Image
-          src={duck}
-          ref={(e) => setRef(imageRefs, e)}
-          width={400}
-          height={300}
-          alt="Ink Duck"
-        />
-        </div>
-        <Link href="/projects#fineart" className={styles.section}>Fine Arts</Link>
-        <p>In my free time I work on many types of fine arts.</p>
-      </div> */}
-
     </main >
   );
 }

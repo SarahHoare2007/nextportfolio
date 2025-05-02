@@ -3,17 +3,6 @@
     src: url('../../assets/fonts/GFSDidot-Regular.ttf') format('ttf');
 }
 
-.nav {
-    font-family: "besley", serif;
-    position: relative;
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    font-size: 23px;
-    list-style: none;
-    padding: 70px 15px 10px 215px;
-    flex-wrap: wrap;
-}
 
 .nav li {
     padding: 7px 10px;
@@ -55,6 +44,48 @@
 }
 
 
+  .hamburger {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 15px;
+    cursor: pointer;
+  }
+  .hamburger svg {
+    font-size: 6rem;
+  }
+  .nav {
+    position: absolute;
+    
+    display: flex;
+    padding: 70px 15px 10px 215px;
+}
+  .nav {
+    font-family: "besley", serif;
+    position: relative;
+    display: none;
+    flex-direction: column;
+    top: -10px;
+    right: 0;
+    width: 100%;
+    padding: 1rem 0;
+    
+    list-style: none;
+
+    transition: all 0.3s ease-in-out;
+    z-index: 1;
+  }
+  .nav.active {
+    display: flex;
+  }
+
+  .nav li {
+    text-align: center;
+    margin: -9px 0;
+    border: 10px solid #9BD7D0;
+    padding: 1rem;
+  }
+
+
 @media (min-width:570px) {
     .background {
         height: 120px;
@@ -79,10 +110,15 @@
     .nav {
         font-size: 25px;
         padding: 65px 20px 10px 200px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
     }
 
     .nav li {
         padding: 5px 15px;
+        border: none;
     }
 
     .background {
@@ -90,6 +126,9 @@
         top: 0px;
         border-bottom: 90px solid #9BD7D0;
     }
+    .hamburger {
+        display: none;
+      }
 }
 
 @media (min-width: 1220px) {
