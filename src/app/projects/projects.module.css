@@ -3,18 +3,18 @@
     flex-direction: column;
     width: 100%;
     background-color: white;
-    margin: 30px;
-    margin-top: 180px;
     justify-content: center;
     align-items: center;
     flex-grow: 1;
     padding: 30px;
     color: black;
+    z-index: 0;
 }
 
 .title {
     display: flex;
     margin-top: 150px;
+    justify-self: center;
 }
 
 
@@ -26,6 +26,7 @@
     /* Adjust spacing between items */
     justify-content: center;
     /* Center items horizontally */
+    align-items: center;
 }
 
 .galleryitem {

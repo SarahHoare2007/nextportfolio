@@ -1,10 +1,7 @@
-import pageStyles from "@/app/page.module.css";
+
 import styles from "@/app/projects/[slug]/slug.module.css";
 import React from 'react';
-import Image from "next/image";
 import PROJECTS from "@/constants/projects";
-import Link from "next/link";
-import YouTube from 'react-youtube';
 import ProjectDisplay from "@/components/project";
 import Footer from '@/components/footer';
 
@@ -31,7 +28,7 @@ export default async function ProjectPage({
     }
 
     return (
-        <main className={pageStyles.main}>
+        <main className={styles.main}>
             <ProjectDisplay project={project} />
             <Footer />
         </main >

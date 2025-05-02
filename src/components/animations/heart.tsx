@@ -6,7 +6,7 @@ import { useLottie } from "lottie-react";
 const HeartDraw = () => {
   const defaultOptions = {
     animationData: animationData,
-    loop: true,
+    loop: false,
   };
 
   const { View } = useLottie(defaultOptions);

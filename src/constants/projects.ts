@@ -15,7 +15,6 @@ import book1 from '@/assets/images/book cover1.png'
 import book2 from '@/assets/images/book cover 2.png'
 import book3 from '@/assets/images/book cover 3.png'
 import quote from '@/assets/images/quoteme.png'
-import creativeinvention from '@/assets/images/creativeinvention.png'
 import favtype from '@/assets/images/broadwayposter.png'
 import explore from '@/assets/images/exploremagazine.png'
 import wrappinglte from '@/assets/images/wrappingpaper_light.png'
@@ -132,7 +131,7 @@ const PROJECTS: Project[] = [
     // width: 200, height: 250, alt: 'Reset Headset Ads' },
     {
         id: 13, slug: "stopmotion-animation",
-        video: "dQw4w9WgXcQ",
+        video: "T2bJHte5nSo",
         src: animationpage,
         width: 200, height: 250, alt: 'Stopmotion Animation',
         desc: 'I made this animation for The Blissful Whisk to use for marketing. I need to link the animation here.'

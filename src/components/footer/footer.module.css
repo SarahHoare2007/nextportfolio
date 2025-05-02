@@ -10,7 +10,7 @@
     background-color: #5FA9A0;
     color: aliceblue;
     width: 100%;
-    height: 500px;
+    height: 200px;
     font-size: 20px;
     justify-content: center;
 
@@ -21,7 +21,7 @@
     padding-top: 60px;
 
     position: relative;
-    margin: 0%;
+    margin: 0;
 }
 
 .footsocials {
@@ -59,24 +59,23 @@
 .shape {
     width: 0;
     height: 0;
-    border-left: 120px solid transparent;
+    border-left: 100px solid transparent;
     border-right: 0px solid transparent;
     border-bottom: 260px solid #9BD7D0;
     position: absolute;
     bottom: 0px;
     right: 0px;
-    margin: 0%;
+    margin: 0;
 }
 
 @media (min-width:800px) {
     .shape {
-        border-left: 500px solid transparent;
+        border-left: 300px solid transparent;
         border-right: 0px solid transparent;
         border-bottom: 300px solid #9BD7D0;
     }
 
     .footer {
-        padding: 30px;
         flex-direction: row;
     }
 }

@@ -28,6 +28,7 @@
   flex-direction: column;
 
   justify-content: center;*/
+  overflow: hidden;
 }
 
 .title {
@@ -94,8 +95,27 @@
   display: grid;
   grid-column-start: 3;
   grid-column-end: 4;
-  grid-row-start: 2;
-  grid-row-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.heart {
+  display: grid;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  margin-bottom: 30px;
+  margin-bottom: 15px;
+  rotate: 10deg;
+}
+
+.swiggle {
+  rotate: 30deg;
+  transform: scaleY(-1);
+}
+
+.wfull {
+  width: 15vw;
 }
 
 @media (min-width: 700px) {
@@ -109,10 +129,11 @@
   .abovefold {
   grid-template-rows: 25vh 25vh 25vh 25vh;
   grid-template-columns: 15vw 70vw 15vw;
+  margin-top: 0;
   }
 
   .skills {
-    font-size: 1.2em;
+    font-size: 1em;
   }
 
 }

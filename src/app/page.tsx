@@ -83,9 +83,8 @@ export default function Home() {
           alt="Sarah Sioux Studios" />*/}
         <h1 className={styles.title}>Sarah Sioux Studios</h1>
 
-        <div className="flex flex-col items-center mx-auto lg:flex">
+        <div className={styles.swiggle}>
         <MyLottieComponent />
-        <HeartDraw />
       </div>
 
      <div className={styles.skills}>
@@ -93,11 +92,17 @@ export default function Home() {
           <div className={styles.IL} ref={(e) => setRef(descRefs, e)}>Illustration</div>
           <div className={styles.WD} ref={(e) => setRef(descRefs, e)}>Web Design</div>
         </div>
-      </div>
 
-      <div className={styles.arrow}>
+        <div className={styles.arrow}>
       <ArrowDraw />
       </div>
+      <div className={styles.heart}>
+        
+      <HeartDraw />
+      </div>
+      </div>
+
+    
     </main >
   );
 }
