@@ -1,5 +1,5 @@
 import styles from "./about.module.css";
-import headshot from '../../assets/images/headshot.svg';
+import headshot from '../../assets/images/headshot.jpg';
 import Image from "next/image";
 import aboutme from '../../assets/images/aboutme.svg';
 import Footer from '@/components/footer';

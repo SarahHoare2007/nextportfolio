@@ -1,11 +1,6 @@
 "use client";
 import React from "react";
-import Image from "next/image";
 import styles from "./page.module.css";
-import inlander from '@/assets/images/inlander.png'
-import duck from '../assets/images/duck.jpg'
-import album from '../assets/images/albumcover.png';
-import title from '../assets/images/mainheading.svg';
 import { gsap } from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
@@ -18,7 +13,7 @@ gsap.registerPlugin(ScrollTrigger)
 
 
 export default function Home() {
-  
+
   const mainRef = useRef();
   const imageRefs = useRef([]);
   const descRefs = useRef([]);
@@ -26,7 +21,7 @@ export default function Home() {
   const setRef = (ref: any, element: any) => {
     ref.current.push(element);
   };
-  
+
 
   useGSAP(
     () => {
@@ -62,10 +57,10 @@ export default function Home() {
 
     },
 
-    
+
     { scope: mainRef }
 
-    
+
   );
 
   //projects start below fold. everything above spreads out
@@ -84,25 +79,25 @@ export default function Home() {
         <h1 className={styles.title}>Sarah Sioux Studios</h1>
 
         <div className={styles.swiggle}>
-        <MyLottieComponent />
-      </div>
+          <MyLottieComponent />
+        </div>
 
-     <div className={styles.skills}>
+        <div className={styles.skills}>
           <div className={styles.GD} ref={(e) => setRef(descRefs, e)}>Graphic Design</div>
           <div className={styles.IL} ref={(e) => setRef(descRefs, e)}>Illustration</div>
           <div className={styles.WD} ref={(e) => setRef(descRefs, e)}>Web Design</div>
         </div>
 
         <div className={styles.arrow}>
-      <ArrowDraw />
-      </div>
-      <div className={styles.heart}>
-        
-      <HeartDraw />
-      </div>
+          <ArrowDraw />
+        </div>
+        <div className={styles.heart}>
+
+          <HeartDraw />
+        </div>
       </div>
 
-    
+
     </main >
   );
 }

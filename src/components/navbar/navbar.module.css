@@ -29,11 +29,11 @@
 
 .logo {
     position: absolute;
-    left: 20px;
-    top: 20px;
+    left: 18px;
+    top: 18px;
     z-index: 100;
     display: block;
-    width: 25vw;
+    width: 150px;
 }
 
 .background {
@@ -44,22 +44,25 @@
 }
 
 
-  .hamburger {
+.hamburger {
     display: flex;
     flex-direction: row-reverse;
     margin: 15px;
     cursor: pointer;
-  }
-  .hamburger svg {
+}
+
+.hamburger svg {
     font-size: 6rem;
-  }
-  .nav {
+}
+
+.nav {
     position: absolute;
-    
+
     display: flex;
     padding: 70px 15px 10px 215px;
 }
-  .nav {
+
+.nav {
     font-family: "besley", serif;
     position: relative;
     display: none;
@@ -68,22 +71,23 @@
     right: 0;
     width: 100%;
     padding: 1rem 0;
-    
+
     list-style: none;
 
     transition: all 0.3s ease-in-out;
     z-index: 1;
-  }
-  .nav.active {
-    display: flex;
-  }
+}
 
-  .nav li {
+.nav.active {
+    display: flex;
+}
+
+.nav li {
     text-align: center;
     margin: -9px 0;
     border: 10px solid #9BD7D0;
     padding: 1rem;
-  }
+}
 
 
 @media (min-width:570px) {
@@ -126,9 +130,10 @@
         top: 0px;
         border-bottom: 90px solid #9BD7D0;
     }
+
     .hamburger {
         display: none;
-      }
+    }
 }
 
 @media (min-width: 1220px) {

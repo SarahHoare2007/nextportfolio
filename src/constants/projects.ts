@@ -70,19 +70,6 @@ const PROJECTS: Project[] = [
         desc: 'This is a design package I created for a fictional IceCream brand. It started out as a label design, and ended with newsletter layouts, magazine layouts, and a website design. This campaign was awarded a Silver Addy at the AAF Spokane American Advertising Awards in 2025, as well as third place in the highschool student graphic design SCAD challenge in 2025.'
     },
     {
-        id: 5, slug: "fox", src: fox,
-        alt: 'Fox Illustration',
-        images: [
-            { src: fox, width: 250, height: 250, alt: 'fox' },
-        ],
-        desc: 'This illustration was one of my first projects I made with Adobe Illustrator. The project was to illustrate any animal in any style to practice the tools of illustrator.'
-    },
-    {
-        id: 4, slug: "marine-pattern", src: pattern,
-        width: 250, height: 250, alt: 'Marine Creatures Pattern',
-        desc: 'This illustrated repeating pattern was one of my early projects I made in Adobe Illustrator. My goal with this was to make the illustrations feel like they were watercolors, so I played with lots of organic shapes and a variety of colors.'
-    },
-    {
         id: 3, slug: "inlander", src: inlander, alt: 'Inlander',
         images: [
             { src: inlander, width: 250, height: 250, alt: 'Inlander Design' },
@@ -91,11 +78,26 @@ const PROJECTS: Project[] = [
         desc: 'I made this magazine cover in Adobe Photoshop for the Inlander Newspaper as a cover for their 2025 summer camps section.'
     },
     {
-        id: 6, slug: "preflight", src: preflight,
+        id: 4, slug: "rapptor", src: rapptor,
+        width: 250, height: 250, alt: 'rapptor'
+    },
+    {
+        id: 5, slug: "stopmotion-animation",
+        video: "T2bJHte5nSo",
+        src: animationpage,
+        width: 200, height: 250, alt: 'Stopmotion Animation',
+        desc: 'I made this animation for The Blissful Whisk to use for marketing. I need to link the animation here.'
+    },
+    {
+        id: 6, slug: "heart", src: heart,
+        width: 250, height: 250, alt: 'heart'
+    },
+    {
+        id: 7, slug: "preflight", src: preflight,
         width: 250, height: 250, alt: 'Preflight poster'
     },
     {
-        id: 7, slug: "book-covers", src: books, alt: 'books',
+        id: 8, slug: "book-covers", src: books, alt: 'books',
         images: [
             { src: book1, width: 250, height: 200, alt: 'Book Covers' },
             { src: book2, width: 250, height: 200, alt: 'Book Covers' },
@@ -103,13 +105,8 @@ const PROJECTS: Project[] = [
         desc: 'books'
     },
     {
-        id: 8, slug: "album-cover", src: albumcover,
+        id: 9, slug: "album-cover", src: albumcover,
         width: 250, height: 250, alt: 'Song Album Cover'
-    },
-    {
-        id: 9, slug: "quote-me", src: quote,
-        width: 200, height: 250, alt: 'Quote Poster',
-        desc: 'This wrapping paper was designed for a contest hosted by Premier Press and was selected as one of the three finalists. It was printed and distributed by Premier Press.'
     },
     {
         id: 10, slug: "nomu", src: nomu,
@@ -124,37 +121,35 @@ const PROJECTS: Project[] = [
         width: 200, height: 250, alt: 'What Is Design'
     },
     {
+        id: 13, slug: "quote-me", src: quote,
+        width: 200, height: 250, alt: 'Quote Poster',
+        desc: 'This wrapping paper was designed for a contest hosted by Premier Press and was selected as one of the three finalists. It was printed and distributed by Premier Press.'
+    },
+    {
         id: 14, slug: "favorite-type", src: favtype,
         width: 200, height: 250, alt: 'Favorite Type Poster'
     },
-    //{ id: 15, slug: "reset-ads", src: creativeinvention, 
-    // width: 200, height: 250, alt: 'Reset Headset Ads' },
     {
-        id: 13, slug: "stopmotion-animation",
-        video: "T2bJHte5nSo",
-        src: animationpage,
-        width: 200, height: 250, alt: 'Stopmotion Animation',
-        desc: 'I made this animation for The Blissful Whisk to use for marketing. I need to link the animation here.'
-    },
-    {
-        id: 18, slug: "fall-folk-festival", src: sfff,
+        id: 15, slug: "fall-folk-festival", src: sfff,
         width: 200, height: 250, alt: 'Spokane Fall Folk Festival poster',
         desc: 'This is my poster submission for the Spokane Fall Folk Festival annual design contest. '
     },
     {
-        id: 20, slug: "scribblism", src: duck, alt: 'scibblism',
+        id: 16, slug: "scribblism", src: duck, alt: 'scibblism',
         images: [
             { src: butterflies, width: 200, height: 250, alt: 'Ink Butterflies' },
         ],
         desc: 'These are some of my fine art pieces that I have locally sold at fairs and markets.'
     },
     {
-        id: 21, slug: "rapptor", src: rapptor,
-        width: 250, height: 250, alt: 'rapptor'
+        id: 17, slug: "fox", src: fox,
+        alt: 'Fox Illustration',
+        desc: 'This illustration was one of my first projects I made with Adobe Illustrator. The project was to illustrate any animal in any style to practice the tools of illustrator.'
     },
     {
-        id: 22, slug: "heart", src: heart,
-        width: 250, height: 250, alt: 'heart'
+        id: 18, slug: "marine-pattern", src: pattern,
+        width: 250, height: 250, alt: 'Marine Creatures Pattern',
+        desc: 'This illustrated repeating pattern was one of my early projects I made in Adobe Illustrator. My goal with this was to make the illustrations feel like they were watercolors, so I played with lots of organic shapes and a variety of colors.'
     },
 ];
 

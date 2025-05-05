@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Figtree } from "next/font/google";
+import 'photoswipe/dist/photoswipe.css';
 import "./globals.css";
 import Navbar from '../components/navbar';
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v13-appRouter';

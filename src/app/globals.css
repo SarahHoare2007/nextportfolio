@@ -93,3 +93,7 @@ a {
     color-scheme: dark;
   }
 }
+
+.pswp__zoom-wrap img {
+  object-fit: contain;
+}
