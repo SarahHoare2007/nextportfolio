@@ -3,6 +3,7 @@ import headshot from '../../assets/images/headshot.jpg';
 import Image from "next/image";
 import aboutme from '../../assets/images/aboutme.svg';
 import Footer from '@/components/footer';
+import Diamond from "@/components/animations/diamond";
 
 export default function About() {
     return (
@@ -27,12 +28,16 @@ export default function About() {
                         about myself I’m supposed to say so this is a tomorrow problem.
                     </p>
                 </div>
-                <div className={styles.headshot}><Image
-                    src={headshot}
-                    width={491}
-                    height={721.5}
-                    alt="Me!"
-                /></div>
+                <div className={styles.headshot}>
+                    <Image
+                        src={headshot}
+                        width={491}
+                        height={721.5}
+                        alt="Me!"
+                    />
+                </div>
+                <div className={styles.diamond}>
+                    <Diamond /></div>
             </div>
             <Footer />
         </main>

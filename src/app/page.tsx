@@ -8,6 +8,7 @@ import { useRef } from 'react';
 import MyLottieComponent from "@/components/animations/swiggle";
 import HeartDraw from "@/components/animations/heart";
 import ArrowDraw from "@/components/animations/arrow";
+import CornerSwiggle from "@/components/animations/cornerswiggle";
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -94,6 +95,9 @@ export default function Home() {
         <div className={styles.heart}>
 
           <HeartDraw />
+        </div>
+        <div className={styles.corner}>
+          <CornerSwiggle />
         </div>
       </div>
 

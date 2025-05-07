@@ -15,11 +15,11 @@
 .abovefold {
   height: 70vh;
   width: 100%;
- /* background-color: grey;*/
+  /* background-color: grey;*/
   align-items: center;
 
   margin-top: 30px;
-  
+
   display: grid;
   grid-template-rows: 25vh 25vh 25vh 25vh;
   grid-template-columns: 15vw 70vw 15vw;
@@ -52,7 +52,7 @@
   /* padding: 10px;*/
   height: 30vh;
   color: black;
-  
+
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 2;
@@ -98,6 +98,7 @@
   grid-row-start: 1;
   grid-row-end: 2;
 }
+
 .heart {
   display: grid;
   grid-column-start: 2;
@@ -114,6 +115,18 @@
   transform: scaleY(-1);
 }
 
+.corner {
+  display: grid;
+  rotate: 300deg;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  align-self: center;
+  justify-self: center;
+  width: 500px;
+}
+
 .wfull {
   width: 15vw;
 }
@@ -127,9 +140,9 @@
 
 
   .abovefold {
-  grid-template-rows: 25vh 25vh 25vh 25vh;
-  grid-template-columns: 15vw 70vw 15vw;
-  margin-top: 0;
+    grid-template-rows: 25vh 25vh 25vh 25vh;
+    grid-template-columns: 15vw 70vw 15vw;
+    margin-top: 0;
   }
 
   .skills {
