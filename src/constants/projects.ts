@@ -26,6 +26,12 @@ import heart from '@/assets/images/porcelainheart.png'
 import iceadone from '@/assets/images/iceburgad-one.png'
 import iceadall from '@/assets/images/iceburgad-all.png'
 import inlandermag from '@/assets/images/inlander-fullpage.jpg'
+import pointeshoe from '@/assets/images/hoare_sarah_pointe.jpg'
+import dragonfly from '@/assets/images/dragonfly.jpg'
+import glass from '@/assets/images/pencilglass.jpg'
+import turtle from '@/assets/images/turtle.jpg'
+import leafhand from '@/assets/images/leafhand.jpg'
+import portrait from '@/assets/images/char_portrait.jpg'
 
 interface Image {
     src: StaticImageData;
@@ -108,9 +114,19 @@ const PROJECTS: Project[] = [
         id: 9, slug: "album-cover", src: albumcover,
         width: 250, height: 250, alt: 'Song Album Cover'
     },
-    {
-        id: 10, slug: "nomu", src: nomu,
-        width: 250, height: 250, alt: 'Nomu Logo'
+     {
+        id: 9, slug: "heart", src: heart,
+        width: 250, height: 250, alt: 'heart'
+    },
+     {
+        id: 10, slug: "fine-arts", src: pointeshoe, alt: 'Fine Art',
+        images: [
+            { src: portrait, width: 200, height: 250, alt: 'Pencil Portrait' },
+            { src: glass, width: 250, height: 200, alt: 'Pencil Glass' },
+            { src: dragonfly, width: 250, height: 200, alt: 'Ink DragonFly' },
+            { src: leafhand, width: 250, height: 200, alt: 'Gouache Leaf and Hand' }],
+            
+        desc: 'These are some of my fine arts pieces. I have experimented in a wide array of mediums are materials to draw and paint on, inluding canvases, walls, clothes, and wood.'
     },
     {
         id: 11, slug: "explore-magazine", src: explore,
@@ -138,19 +154,24 @@ const PROJECTS: Project[] = [
         id: 16, slug: "scribblism", src: duck, alt: 'scibblism',
         images: [
             { src: butterflies, width: 200, height: 250, alt: 'Ink Butterflies' },
+            { src: turtle, width: 200, height: 250, alt: 'Turtle sketch' },
         ],
-        desc: 'These are some of my fine art pieces that I have locally sold at fairs and markets.'
+        desc: 'These are some of my scribblism pieces that I have locally sold at fairs and markets.'
+    },
+      {
+        id: 21, slug: "quote-me", src: quote,
+        width: 200, height: 250, alt: 'Quote Poster',
+        desc: 'This wrapping paper was designed for a contest hosted by Premier Press and was selected as one of the three finalists. It was printed and distributed by Premier Press.'
     },
     {
-        id: 17, slug: "fox", src: fox,
-        alt: 'Fox Illustration',
-        desc: 'This illustration was one of my first projects I made with Adobe Illustrator. The project was to illustrate any animal in any style to practice the tools of illustrator.'
+        id: 22, slug: "rapptor", src: rapptor,
+        width: 250, height: 250, alt: 'rapptor'
     },
     {
-        id: 18, slug: "marine-pattern", src: pattern,
-        width: 250, height: 250, alt: 'Marine Creatures Pattern',
-        desc: 'This illustrated repeating pattern was one of my early projects I made in Adobe Illustrator. My goal with this was to make the illustrations feel like they were watercolors, so I played with lots of organic shapes and a variety of colors.'
+        id: 23, slug: "nomu", src: nomu,
+        width: 250, height: 250, alt: 'Nomu Logo'
     },
+   
 ];
 
 export default PROJECTS;
