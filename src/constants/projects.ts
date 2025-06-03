@@ -124,6 +124,7 @@ const PROJECTS: Project[] = [
             { src: portrait, width: 200, height: 250, alt: 'Pencil Portrait' },
             { src: glass, width: 250, height: 200, alt: 'Pencil Glass' },
             { src: dragonfly, width: 250, height: 200, alt: 'Ink DragonFly' },
+            { src: pointeshoe, width: 250, height: 200, alt: 'Arcrylic Pointe Shoe' },
             { src: leafhand, width: 250, height: 200, alt: 'Gouache Leaf and Hand' }],
             
         desc: 'These are some of my fine arts pieces. I have experimented in a wide array of mediums are materials to draw and paint on, inluding canvases, walls, clothes, and wood.'
@@ -155,6 +156,7 @@ const PROJECTS: Project[] = [
         images: [
             { src: butterflies, width: 200, height: 250, alt: 'Ink Butterflies' },
             { src: turtle, width: 200, height: 250, alt: 'Turtle sketch' },
+            { src: duck, width: 200, height: 250, alt: 'Duck Skecth' },
         ],
         desc: 'These are some of my scribblism pieces that I have locally sold at fairs and markets.'
     },
