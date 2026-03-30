@@ -34,7 +34,8 @@ export default function Projects() {
                 width={300}
                 height={100}
                 alt="Projects" />
-
+            
+            <p className={styles.detail}>Click to expand and scroll!</p>
             <Gallery />
             <Footer />
         </main>
